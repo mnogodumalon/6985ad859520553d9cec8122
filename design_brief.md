@@ -3,31 +3,33 @@
 ## 1. App Analysis
 
 ### What This App Does
-This is a **shared calendar system** ("Gemeinsamer Terminkalender") used to coordinate schedules among group members. It manages three types of data: users/participants (Benutzerverwaltung), weekly schedules (Wochenkalender), and individual calendar entries (Kalendereintraege). Both calendar types support assigning participants from the user pool and categorizing entries into one of three "Tours" (Tour 1, Tour 2, Tour 3). The tours likely represent different routes, shifts, or service areas that participants are assigned to.
+This is a **shared calendar system** ("Gemeinsamer Terminkalender") used by a community or congregation to coordinate weekly schedules and calendar events. It manages participants (Benutzerverwaltung), assigns them to tours (Tour 1/2/3), and tracks both weekly schedules (Wochenkalender) and calendar entries (Kalendereinträge). Each event has a start and end time, assigned participants, and a tour designation.
 
 ### Who Uses This
-Community or congregation members ("Versammlung" field suggests a religious congregation) who coordinate shared service schedules. They need to quickly see who is assigned where and when, and add new calendar entries for upcoming service periods. These are non-technical users who think in terms of "When is my next assignment?" and "Who is on Tour 2 this week?"
+Community coordinators or congregation leaders who need to see at a glance: who is scheduled when, which tours are covered, and what's coming up this week. They are NOT tech-savvy — they want a clear overview without clicking through menus. They think in terms of "Who's working this week?" and "Are all tours covered?"
 
 ### The ONE Thing Users Care About Most
-**Upcoming assignments** - Users want to see at a glance what's happening this week and next: which tours are scheduled, who is assigned, and when. The timeline of upcoming events is the heartbeat of this app.
+**"What's happening this week?"** — An instant overview of upcoming events and tour assignments for the current week. They want to open the dashboard and immediately know if everything is covered and who is assigned where.
 
 ### Primary Actions (IMPORTANT!)
-1. **Neuen Termin eintragen** (Add new calendar entry) - Primary Action Button. This is the most frequent action: scheduling a new assignment with date, participants, and tour.
-2. View upcoming schedule by tour
-3. See participant assignments
+1. **Neuen Termin eintragen** (Add new calendar entry) → Primary Action Button — This is the most frequent action: scheduling a new event with participants and tour assignment
+2. View upcoming events by tour
+3. See participant workload/distribution
 
 ---
 
 ## 2. What Makes This Design Distinctive
 
 ### Visual Identity
-The design uses a **warm, muted sage-green palette** with cream undertones that evokes the calm professionalism of a well-organized community planner. Instead of aggressive corporate blues or sterile grays, the sage accent color feels approachable and grounded - appropriate for a congregation's scheduling tool. The typography uses generous weight contrast to create a clear reading rhythm: heavy numbers for dates and counts, light labels for context.
+A calm, organized dashboard that feels like a well-designed **paper planner brought to digital life**. The cool slate-blue accent on a warm off-white base creates a professional yet approachable feel — not corporate, not playful, but trustworthy. The design uses subtle left-border accents on cards (colored by tour) to create a visual filing system, like colored tabs in a physical planner.
 
 ### Layout Strategy
-The layout is **asymmetric on desktop** with a dominant left column showing the upcoming week's timeline (the hero) and a narrower right column for quick stats and participant overview. This mirrors how users naturally think: "What's happening?" (left, big) then "Who's involved?" (right, supporting). On mobile, the timeline becomes a vertically stacked card stream with large, thumb-friendly date headers. Visual interest comes from **varying card heights** - timeline entries with two participants are taller than single-participant ones - and from the **tour color coding** (each tour gets a subtle left-border accent) creating a visual rhythm through the list.
+- **Asymmetric desktop layout**: Wide left column (65%) holds the hero "This Week" timeline and upcoming events. Narrow right column (35%) shows participant stats and quick-add. This mirrors the mental model: "What's happening?" (main) vs "Who's available?" (supporting).
+- **Hero element**: A large "This Week" section showing the count of events this week as a prominent number, with a compact visual breakdown by tour beneath it. The hero takes up the top portion of the left column and uses size + whitespace to dominate.
+- **Visual interest** comes from: (1) tour-colored left-border accents on event cards, (2) the oversized hero number contrasting with compact secondary stats, (3) a horizontal "tour distribution" bar that adds color without clutter.
 
 ### Unique Element
-Each calendar entry card has a **colored left border strip** (4px wide) that corresponds to the tour assignment: sage-green for Tour 1, warm amber for Tour 2, soft slate-blue for Tour 3. This creates an immediately scannable visual pattern - users can identify tour distribution at a glance without reading any text. On desktop, the upcoming week section uses a **timeline-style layout** with date grouping headers that create natural visual breaks.
+Each tour has a signature color (slate-blue for Tour 1, warm amber for Tour 2, sage green for Tour 3). Event cards have a **3px left border** in their tour's color, creating a subtle but instantly recognizable visual filing system. The tour distribution bar at the bottom of the hero section uses these same three colors in a single horizontal stacked bar — minimal but informative, like a progress indicator split three ways.
 
 ---
 
@@ -35,155 +37,152 @@ Each calendar entry card has a **colored left border strip** (4px wide) that cor
 
 ### Font
 - **Family:** Plus Jakarta Sans
-- **URL:** `https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap`
-- **Why this font:** Plus Jakarta Sans has a warm, geometric quality that feels professional yet approachable. Its distinctive letter shapes (especially the lowercase 'a' and 'g') give it personality without sacrificing readability. The wide weight range (300-800) enables strong typographic hierarchy.
+- **URL:** `https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap`
+- **Why this font:** Plus Jakarta Sans has a professional warmth with slightly rounded terminals that feels approachable without being casual. It has excellent weight range (300–700) for creating strong typographic hierarchy, and its geometric clarity makes numbers highly readable at large sizes — crucial for a calendar dashboard.
 
 ### Color Palette
 All colors as complete hsl() functions:
 
 | Purpose | Color | CSS Variable |
 |---------|-------|--------------|
-| Page background | `hsl(80 20% 97%)` | `--background` |
-| Main text | `hsl(160 10% 15%)` | `--foreground` |
+| Page background | `hsl(40 25% 97%)` | `--background` |
+| Main text | `hsl(220 20% 16%)` | `--foreground` |
 | Card background | `hsl(0 0% 100%)` | `--card` |
-| Card text | `hsl(160 10% 15%)` | `--card-foreground` |
-| Borders | `hsl(80 10% 88%)` | `--border` |
-| Primary action (sage green) | `hsl(155 35% 38%)` | `--primary` |
+| Card text | `hsl(220 20% 16%)` | `--card-foreground` |
+| Borders | `hsl(220 15% 90%)` | `--border` |
+| Primary action | `hsl(215 55% 42%)` | `--primary` |
 | Text on primary | `hsl(0 0% 100%)` | `--primary-foreground` |
-| Accent highlight | `hsl(155 25% 93%)` | `--accent` |
-| Muted background | `hsl(80 10% 94%)` | `--muted` |
-| Muted text | `hsl(160 5% 45%)` | `--muted-foreground` |
-| Success/positive | `hsl(155 40% 42%)` | (component use) |
-| Error/negative | `hsl(0 65% 50%)` | `--destructive` |
-| Tour 1 color | `hsl(155 35% 38%)` | (inline style) |
-| Tour 2 color | `hsl(35 70% 50%)` | (inline style) |
-| Tour 3 color | `hsl(215 40% 55%)` | (inline style) |
+| Accent highlight | `hsl(215 40% 95%)` | `--accent` |
+| Muted background | `hsl(220 15% 95%)` | `--muted` |
+| Muted text | `hsl(220 10% 50%)` | `--muted-foreground` |
+| Success/positive | `hsl(152 45% 42%)` | (component use) |
+| Error/negative | `hsl(0 65% 52%)` | `--destructive` |
+
+**Tour Colors (used for card borders and distribution bar):**
+- Tour 1: `hsl(215 55% 52%)` — Slate blue (matches primary family)
+- Tour 2: `hsl(35 75% 55%)` — Warm amber
+- Tour 3: `hsl(152 40% 48%)` — Sage green
 
 ### Why These Colors
-The sage-green primary creates a calm, nature-inspired feeling that suits a community scheduling tool. The warm cream background (`hsl(80 20% 97%)`) avoids the clinical feeling of pure white while maintaining excellent readability. The tour colors are chosen to be clearly distinguishable from each other (green/amber/blue) while all feeling harmonious within the sage-toned palette.
+The warm off-white background (`hsl(40 25% 97%)`) avoids the clinical feel of pure white while keeping things bright and readable. The slate-blue primary (`hsl(215 55% 42%)`) feels reliable and structured — fitting for a scheduling tool. The three tour colors are distinct enough for instant recognition but all sit in the same saturation range so they feel cohesive, not chaotic.
 
 ### Background Treatment
-The page background is a subtle warm off-white with a slight greenish-cream undertone (`hsl(80 20% 97%)`). Cards sit on pure white to create gentle depth separation. No gradients or patterns - the tour-colored left borders on cards provide enough visual texture.
+The page background is a warm off-white (`hsl(40 25% 97%)`) — not pure white, with a very subtle warm undertone that makes white cards "float" naturally. Cards use pure white (`hsl(0 0% 100%)`) which creates gentle depth without needing heavy shadows. No gradients or patterns — the warmth of the background alone creates enough visual interest.
 
 ---
 
 ## 4. Mobile Layout (Phone)
 
 ### Layout Approach
-Mobile is a focused **vertical stream** designed for one-handed use. The hero section dominates the first viewport with a large "this week" summary. Below, calendar entries are stacked as full-width cards with generous spacing. The layout creates hierarchy through **size variation**: the hero area uses 48px numbers while entry cards use 16px text, creating an obvious visual distinction.
+Mobile is a focused, scroll-driven experience. The hero section takes up the first viewport fold — a large number showing this week's event count with the tour distribution bar directly beneath. Below the fold, upcoming events are listed as compact cards with tour-colored left borders. The primary action button is fixed at the bottom of the screen for constant accessibility.
 
 ### What Users See (Top to Bottom)
 
 **Header:**
-A compact header with the app title "Terminkalender" on the left (700 weight, 20px) and a circular "+" button on the right (44px touch target, primary color background, white plus icon). Clean, minimal - no unnecessary decoration.
+A simple top bar with the app name "Terminkalender" in 600 weight, 18px. No logo, no hamburger menu — clean and direct. Right side has a small avatar/icon placeholder (24px circle) for future user context.
 
 **Hero Section (The FIRST thing users see):**
-A full-width summary area taking approximately 35% of the first viewport. Contains:
-- **"Diese Woche"** label in muted text (14px, 500 weight, uppercase tracking)
-- **Large count number** showing total appointments this week (48px, 800 weight, foreground color)
-- **"Termine"** subtitle beneath the number (16px, 400 weight, muted)
-- Below the count, a **horizontal row of 3 small tour badges** showing how many entries per tour this week. Each badge has the tour's left-border color as background tint, showing "Tour 1: 3" style text (13px, 600 weight). These badges use `gap-3` horizontal spacing and are horizontally scrollable if needed.
+- Takes approximately 40% of the initial viewport
+- Large centered number showing **events this week** — displayed at 56px, 700 weight, in the foreground color
+- Subtitle "Termine diese Woche" in 14px, 400 weight, muted-foreground
+- Below the number: a horizontal stacked bar (8px tall, full width, rounded-full) showing distribution across Tour 1/2/3 using tour colors. This immediately communicates coverage balance.
+- Below the bar: three inline labels showing "Tour 1: X · Tour 2: X · Tour 3: X" in 12px, muted-foreground
+- The hero sits in a white card with 16px padding and the standard border radius
+- **Why this is the hero:** Users open the app asking "What's happening this week?" — this answers it in under one second
 
-This hero answers the user's first question: "How busy is this week?"
+**Section 2: Nächste Termine (Upcoming Events)**
+- Section heading "Nächste Termine" in 16px, 600 weight with a "Alle anzeigen" link in primary color on the right
+- Compact event cards stacked vertically with 8px gaps
+- Each card: white background, 3px left border in tour color, 12px padding
+  - Top line: Date in 13px 600 weight (e.g., "Mo, 10. Feb · 09:00–11:00")
+  - Bottom line: Participant names in 13px 400 weight, muted-foreground, with a small tour badge (pill shape, 10px text, tour background at 15% opacity with tour-colored text)
+- Shows maximum 5 upcoming events
+- If no events: show an empty state with a calendar icon (48px, muted) and text "Keine Termine diese Woche" in 14px muted-foreground
 
-**Section 2: Kommende Termine (Upcoming Entries)**
-The main content area. A section header reads "Kommende Termine" (16px, 700 weight) with a small "Alle anzeigen" text link on the right.
-
-Calendar entries are grouped by date. Each date group has:
-- A **date header** showing the weekday and date (e.g., "Montag, 10. Feb.") in 14px, 600 weight, muted-foreground color, with a subtle bottom border
-- Below it, entry cards for that date
-
-Each **entry card** is a full-width card with:
-- A **4px left border** in the tour's color (Tour 1 = sage green, Tour 2 = amber, Tour 3 = slate blue)
-- **Time range** at top: "09:00 - 11:30" (14px, 600 weight, foreground)
-- **Tour badge** next to time: small rounded pill badge with tour name, using tour color as subtle background tint (12px, 500 weight)
-- **Participants** below: one line per participant showing "Vorname Nachname" (14px, 400 weight). If a participant is null/missing, show "Nicht zugewiesen" in muted text
-- Card padding: 12px vertical, 16px horizontal (plus 4px left border)
-- Card spacing between entries: 8px
-
-Show up to 10 upcoming entries (from today forward, sorted by datum_von ascending). Both Wochenkalender and Kalendereintraege entries are merged into one unified list.
-
-**Section 3: Teilnehmer (Participants)**
-A collapsible section (starts collapsed on mobile to save space). Header shows "Teilnehmer" with a count badge and a chevron-down icon. When expanded, shows a simple list of all users: "Vorname Nachname" per line with "Versammlung" as muted subtitle (13px). Each list item has 10px vertical padding and a subtle bottom border.
+**Section 3: Teilnehmer (Participants Overview)**
+- Section heading "Teilnehmer" in 16px, 600 weight
+- Horizontal scroll row of compact participant "chips" — each showing first name + last initial, with a small number badge indicating how many events they're assigned to this month
+- Chips: pill shape, muted background, 13px text, 8px horizontal padding, 4px vertical padding
+- This gives a quick workload overview without taking much vertical space
 
 **Bottom Navigation / Action:**
-No fixed bottom bar. The "+" button in the header serves as the primary action. When tapped, it opens a full-screen dialog (sheet from bottom) for creating a new calendar entry.
+- Fixed bottom bar with the primary action button: full-width (with 16px margins), 48px height, primary background color, white text, "Neuen Termin eintragen" in 15px 600 weight, rounded-lg (8px). Sitting 16px above the bottom safe area.
+- Subtle top border on the fixed bar (1px, border color) to separate from content
 
 ### Mobile-Specific Adaptations
-- Hero section is more compact than desktop (no chart, just the count + tour badges)
-- Entry cards are simplified: no hover states, just the essential info
-- Participant section is collapsible to prioritize the schedule view
-- The add-entry dialog slides up as a bottom sheet taking ~90% of screen height
+- Hero number is centered and large (56px) — on desktop it's left-aligned
+- Tour distribution bar is full-width instead of a fixed-width element
+- Event cards use single-column stack instead of a table
+- Participant section uses horizontal scroll instead of a multi-column grid
 
 ### Touch Targets
-- All tappable areas minimum 44px height
-- The "+" button is 44x44px with generous hit area
-- Tour badges in hero are at least 36px tall for comfortable tapping
-- Entry cards have 12px vertical padding making them easy to tap for detail view
+- Event cards are tappable (minimum 44px height) — tapping opens event details (or could expand inline)
+- Primary action button is 48px tall, full-width
+- Participant chips are at least 36px tall for comfortable tapping
 
 ### Interactive Elements
-- Tapping an entry card opens a detail dialog showing full information (both participants with contact info, tour, full date/time range)
-- Tour badges in hero section can be tapped to filter the list below to only that tour
+- Tapping an event card could expand it to show full participant details and tour info (accordion-style expand, not navigation)
+- The primary action button opens a bottom sheet / dialog for adding a new calendar entry
 
 ---
 
 ## 5. Desktop Layout
 
 ### Overall Structure
-A **two-column asymmetric layout** with max-width of 1200px, centered. Left column takes 65% width, right column 35%, with 24px gap between them.
+Two-column asymmetric layout with max-width of 1200px, centered on the page.
 
-The eye goes: (1) Hero stats at top-left, (2) Timeline of upcoming entries below hero, (3) Right sidebar with participant list and tour overview.
+- **Left column (65%):** Hero section at top (this week's count + tour bar), then the upcoming events list/table below
+- **Right column (35%):** Secondary KPIs (total participants, events this month) stacked at top, then participant list below
+- **The eye goes:** Hero number (top-left) → Tour distribution bar → Upcoming events → Right column stats → Participant list
 
-Visual interest comes from the asymmetric split, the varying heights of entry cards, and the tour-colored left borders creating a colorful left edge pattern down the timeline.
+This mirrors the mental model: "What's happening?" dominates, "Who's involved?" supports.
 
 ### Section Layout
 
-**Top Area (Full Width):**
-A compact header bar with:
-- "Terminkalender" title (24px, 700 weight) on the left
-- "Neuen Termin eintragen" primary action button on the right (standard Button component, primary variant, with Plus icon before text)
+**Top area (full width):**
+- App title "Gemeinsamer Terminkalender" in 24px, 700 weight on the left
+- Primary action button "Neuen Termin eintragen" on the right — standard button (not full-width), primary color, with a "+" icon (lucide CalendarPlus) before the text
 
-**Left Column (65%):**
+**Left column — Hero Card:**
+- White card, standard border radius, 24px padding
+- "Diese Woche" label in 13px, 500 weight, muted-foreground, uppercase, letter-spacing 0.05em
+- The event count number: 48px, 700 weight, foreground color
+- "Termine" suffix in 16px, 400 weight, muted-foreground, inline after the number
+- Tour distribution stacked bar: 6px tall, full card width, rounded-full, with the three tour colors
+- Below bar: three items inline — each showing a colored dot (8px circle) + "Tour 1: X" in 13px, with 16px gap between items
 
-*Hero Stats Row:*
-Three stat items displayed inline horizontally (not in cards - just text). Separated by subtle vertical dividers (1px, border color, 32px height).
-- **Diese Woche:** Large number (40px, 800 weight) + "Termine" label below (13px, muted)
-- **Naechste Woche:** Large number (40px, 800 weight) + "Termine" label below (13px, muted)
-- **Aktive Teilnehmer:** Large number (40px, 800 weight) + "Personen" label below (13px, muted)
+**Left column — Upcoming Events Table:**
+- White card below the hero, 24px padding
+- "Nächste Termine" heading in 18px, 600 weight
+- Table with columns: Datum (date/time), Teilnehmer (participant names), Tour (colored badge)
+- Table rows have subtle bottom borders (1px, border color)
+- Date column: 14px, 500 weight — format "Mo, 10.02. · 09:00–11:00"
+- Teilnehmer column: 14px, 400 weight — shows both participant names joined with " & "
+- Tour column: pill badge with tour background at 12% opacity, tour-colored text, 12px font
+- Shows up to 10 upcoming events, sorted by datum_von ascending (only future events)
+- Rows have subtle hover: background transitions to accent color
 
-Spacing: 32px padding below, then a subtle border-bottom separator.
+**Right column — Top Stats:**
+- Two stacked stat cards with 12px gap
+- Each card: white background, standard border radius, 16px padding
+  - **Card 1 — "Teilnehmer"**: Total number of participants (count from Benutzerverwaltung), displayed as 32px 700 weight number, with "registriert" label in 13px muted-foreground below
+  - **Card 2 — "Diesen Monat"**: Count of events this calendar month, displayed as 32px 700 weight number, with "Termine" label in 13px muted-foreground below
 
-*Upcoming Entries Timeline:*
-Section header "Kommende Termine" (18px, 700 weight) with optional tour filter pills on the right (small rounded buttons: "Alle", "Tour 1", "Tour 2", "Tour 3" - the active one uses primary color, others are outline/ghost).
-
-Entries grouped by date, same structure as mobile but with **enhanced layout for wider space**:
-- Date header spans full width with muted background strip (2px height below text)
-- Each entry card shows information in a **horizontal row layout**:
-  - Left: 4px colored border
-  - Time column (120px fixed width): "09:00 - 11:30" stacked or on one line
-  - Tour column (80px): tour badge pill
-  - Participants column (flex-grow): "Teilnehmer 1: Name" and "Teilnehmer 2: Name" on one line separated by a centered dot, or stacked if both are long
-  - This row layout is more space-efficient than the mobile card layout
-
-Show up to 20 upcoming entries on desktop.
-
-**Right Column (35%):**
-
-*Tour Overview Card:*
-A card titled "Tour-Uebersicht" showing a simple bar chart (recharts horizontal BarChart) with 3 bars - one per tour - showing how many entries each tour has this week. Bars use the tour colors. Chart height: 160px. Below the chart, a legend row with colored dots and tour names.
-
-*Teilnehmer Card:*
-A card titled "Teilnehmer" with a count badge (e.g., "12"). Lists all participants as compact rows: "Vorname Nachname" with "Versammlung" as muted text on the right. Each row has a subtle bottom border. Max height 400px with overflow-y scroll. Each row shows a small avatar circle (32px, initials-based, muted background) on the left.
+**Right column — Participant List:**
+- White card below stats, 16px padding
+- "Teilnehmer" heading in 16px, 600 weight
+- Simple list of participants: each row shows "Vorname Nachname" in 14px 400 weight, with "Versammlung" in 13px muted-foreground on the right
+- Rows separated by subtle 1px borders
+- Shows all participants, scrollable if many (max-height 400px with overflow-y auto)
 
 ### What Appears on Hover
-- Entry cards: subtle shadow elevation (`shadow-sm` to `shadow-md` transition) and slightly lighter background
-- Participant rows: background shifts to accent color (`bg-accent`)
-- Tour filter pills: underline effect on inactive pills
+- Event table rows: background color transitions to accent (`hsl(215 40% 95%)`) over 150ms
+- Primary action button: slight brightness increase (lighten by 5%)
+- Participant list rows: background color transitions to muted over 150ms
 
 ### Clickable/Interactive Areas
-- Entry cards: clicking opens a detail dialog with full info + edit/delete options
-- Tour filter pills: filter the entries list
-- Participant rows: clicking shows a popover with contact details (email, phone) and their upcoming assignments
+- Event table rows are clickable — could expand to show full details inline (optional, not required for MVP)
+- Primary action button in header opens a dialog (not a bottom sheet on desktop) for adding a new calendar entry
 
 ---
 
@@ -193,92 +192,87 @@ A card titled "Teilnehmer" with a count badge (e.g., "12"). Lists all participan
 The MOST important metric that users see first.
 
 - **Title:** "Diese Woche"
-- **Data source:** Wochenkalender + Kalendereintraege (both apps, merged)
-- **Calculation:** Count all entries where `datum_von` falls within the current week (Monday to Sunday)
-- **Display:** Large number (48px mobile / 40px desktop, 800 weight) with "Termine" label below
-- **Context shown:** Tour distribution badges showing count per tour for this week
-- **Why this is the hero:** Users open this app to answer "What's happening this week?" - the count plus tour breakdown gives them an instant overview
+- **Data source:** Kalendereinträge (primary) + Wochenkalender (combined)
+- **Calculation:** Count all events from both Kalendereinträge and Wochenkalender where `datum_von` falls within the current week (Monday to Sunday). Use date-fns `startOfWeek` with `{ weekStartsOn: 1 }` and `endOfWeek` to determine the range.
+- **Display:** Large number (48px desktop / 56px mobile, 700 weight) with "Termine" suffix. Below it, a horizontal stacked bar showing the breakdown by tour (Tour 1 / Tour 2 / Tour 3), plus three inline counters with colored dots.
+- **Context shown:** Tour distribution breakdown — instantly shows if coverage is balanced or if one tour is under-staffed.
+- **Why this is the hero:** The coordinator opens this dashboard to answer "What's happening this week?" — the count and distribution answer this in under one second.
 
 ### Secondary KPIs
 
-**Naechste Woche**
-- Source: Wochenkalender + Kalendereintraege
-- Calculation: Count entries where `datum_von` falls within next week
-- Format: number
-- Display: Desktop only - inline stat next to hero (40px number)
-
-**Aktive Teilnehmer**
+**Teilnehmer (Participants Count)**
 - Source: Benutzerverwaltung
-- Calculation: Total count of all users
-- Format: number
-- Display: Desktop only - inline stat (40px number)
+- Calculation: Count of all records
+- Format: Whole number
+- Display: 32px number in a compact card (right column on desktop, part of participants section on mobile)
+
+**Termine Diesen Monat (Events This Month)**
+- Source: Kalendereinträge + Wochenkalender
+- Calculation: Count of events where `datum_von` falls within the current calendar month (use date-fns `startOfMonth` / `endOfMonth`)
+- Format: Whole number
+- Display: 32px number in a compact card (right column on desktop, not shown separately on mobile — implied by the weekly view)
 
 ### Chart
-- **Type:** Horizontal BarChart - because it compares 3 discrete categories (tours) and horizontal bars are easier to label
-- **Title:** "Tour-Uebersicht"
-- **What question it answers:** "How are this week's entries distributed across tours?" - helps identify if one tour is overloaded
-- **Data source:** Wochenkalender + Kalendereintraege (this week's entries)
-- **X-axis:** Count of entries (number)
-- **Y-axis:** Tour name (Tour 1, Tour 2, Tour 3)
-- **Bar colors:** Tour 1 = `hsl(155 35% 38%)`, Tour 2 = `hsl(35 70% 50%)`, Tour 3 = `hsl(215 40% 55%)`
-- **Mobile simplification:** On mobile, this chart is replaced by the 3 inline tour badges in the hero section (simpler, takes less space)
-- **Desktop:** Shown in right sidebar card, 160px height
+No traditional chart. Instead, the **tour distribution stacked bar** serves as a minimal, inline visualization. This avoids chart clutter for what is essentially a scheduling tool — users need lists and assignments, not line graphs.
+
+- **Type:** Horizontal stacked bar (custom component, not recharts — just three colored divs with flex)
+- **Title:** None (sits directly under the hero number)
+- **What question it answers:** "Are tours evenly covered this week?"
+- **Data source:** Kalendereinträge + Wochenkalender (this week's events, grouped by tour)
+- **Mobile simplification:** Full-width, same as desktop but 8px height instead of 6px
 
 ### Lists/Tables
 
-**Kommende Termine (Upcoming Entries)**
-- Purpose: The core view - shows users what's coming up so they can plan
-- Source: Wochenkalender + Kalendereintraege (merged, sorted by datum_von ascending)
-- Fields shown: datum_von (formatted as time), datum_bis (formatted as time), tour (as colored badge), teilnehmer_1 name (Kalendereintraege), teilnehmer_2 name (both apps) - resolved via extractRecordId + lookup in Benutzerverwaltung data
-- Mobile style: stacked cards with colored left border, grouped by date
-- Desktop style: compact horizontal row cards with colored left border, grouped by date
-- Sort: by datum_von ascending, only entries from today onwards
-- Limit: 10 on mobile, 20 on desktop
+**Nächste Termine (Upcoming Events)**
+- Purpose: See what's coming up next, with participants and tour assignments
+- Source: Kalendereinträge + Wochenkalender
+- Fields shown: datum_von, datum_bis (formatted as date + time range), teilnehmer_1 and/or teilnehmer_2 (resolved to names via Benutzerverwaltung lookup), tour (as colored badge)
+- Mobile style: Compact cards with left border colored by tour
+- Desktop style: Clean table with columns: Date/Time, Participants, Tour
+- Sort: By datum_von ascending, only future events (datum_von >= today)
+- Limit: 5 on mobile, 10 on desktop
 
-**Teilnehmer (Participants)**
-- Purpose: Quick reference for who's in the system
+**Teilnehmer (Participant List)**
+- Purpose: Quick reference of all registered participants
 - Source: Benutzerverwaltung
-- Fields shown: vorname, nachname, versammlung
-- Mobile style: collapsible simple list
-- Desktop style: card in right sidebar with scrollable list, avatar initials
-- Sort: by nachname ascending
-- Limit: all (scrollable)
+- Fields shown: vorname + nachname (full name), versammlung
+- Mobile style: Horizontal scroll chips showing first name + last initial
+- Desktop style: Simple list with name and versammlung
+- Sort: By nachname alphabetically
+- Limit: All participants (scrollable on desktop if > 10)
 
 ### Primary Action Button (REQUIRED!)
 
-- **Label:** "Neuen Termin eintragen" (desktop full text) / "+" icon only (mobile)
-- **Action:** add_record - opens a dialog/sheet with a form to create a new Kalendereintraege entry
-- **Target app:** Kalendereintraege (the more detailed calendar with two participant fields)
+- **Label:** "Neuen Termin eintragen"
+- **Action:** add_record
+- **Target app:** Kalendereinträge (app_id: 6985ad70362c1183b8ef9c05)
 - **What data:** The form contains:
-  - `datum_von`: date + time picker (type="datetime-local", step to minutes)
-  - `datum_bis`: date + time picker
-  - `teilnehmer_1`: Select dropdown populated from Benutzerverwaltung (show "Vorname Nachname")
-  - `teilnehmer_2`: Select dropdown populated from Benutzerverwaltung (show "Vorname Nachname")
-  - `tour`: Select dropdown with options Tour 1, Tour 2, Tour 3
-  - Submit button: "Termin speichern" (primary variant)
-  - Note: `teilnehmer_1` and `teilnehmer_2` values must be saved as full applookup URLs using `createRecordUrl(APP_IDS.BENUTZERVERWALTUNG, selectedId)`
-  - Note: date values must be formatted as `YYYY-MM-DDTHH:MM` (no seconds!)
-- **Mobile position:** header (top-right "+" circle button, opens bottom sheet)
-- **Desktop position:** header (top-right full button with text)
-- **Why this action:** Creating new calendar entries is the primary workflow - coordinators frequently add new assignments as schedules change
+  - `datum_von` — Date/time picker (required), format YYYY-MM-DDTHH:MM
+  - `datum_bis` — Date/time picker (required), format YYYY-MM-DDTHH:MM
+  - `teilnehmer_1` — Select dropdown populated from Benutzerverwaltung records (shows "Vorname Nachname"), value is the record URL via createRecordUrl()
+  - `teilnehmer_2` — Select dropdown populated from Benutzerverwaltung records (shows "Vorname Nachname"), value is the record URL via createRecordUrl()
+  - `tour` — Select dropdown with options: Tour 1 (tour_1), Tour 2 (tour_2), Tour 3 (tour_3)
+- **Mobile position:** bottom_fixed — full-width button fixed to the bottom of the screen
+- **Desktop position:** header — standard button in the top-right header area
+- **Why this action:** The primary reason coordinators use this tool is to schedule new events with assigned participants and tours. Making this one-tap accessible is essential.
 
 ---
 
 ## 7. Visual Details
 
 ### Border Radius
-Rounded (8px) - `--radius: 0.5rem`. Cards use `rounded-lg` (8px). Badges and pills use `rounded-full`. Input fields use `rounded-md` (6px).
+Rounded (8px) — `--radius: 0.5rem`. Cards, buttons, and inputs all use this. Tour badges use pill (9999px). The tour distribution bar uses rounded-full.
 
 ### Shadows
-Subtle - Cards have `shadow-sm` at rest. On hover (desktop), cards elevate to `shadow-md`. The add-entry dialog has `shadow-xl`. No other shadows. The subtlety keeps the design clean.
+Subtle — Cards use `0 1px 3px rgba(0,0,0,0.04), 0 1px 2px rgba(0,0,0,0.06)`. This is lighter than default shadcn shadows. The warm background makes cards "float" without needing heavy shadows.
 
 ### Spacing
-Spacious - generous whitespace creates breathing room. Section gaps: 24px. Card internal padding: 16px (mobile) / 20px (desktop). Gap between entry cards: 8px. Gap between date groups: 20px. Page horizontal padding: 16px (mobile) / 0 (desktop, container handles it).
+Normal to spacious — 24px card padding on desktop, 16px on mobile. 16px gaps between cards. 32px gap between major sections. The hero section has extra breathing room (32px bottom margin) to emphasize its importance.
 
 ### Animations
-- **Page load:** Stagger fade-in for entry cards (each card fades in 50ms after the previous, using CSS `animation-delay`). Hero stats fade in first (200ms), then entries (staggered from 300ms).
-- **Hover effects:** Cards smoothly elevate shadow (`transition-shadow duration-200`). Participant rows smoothly change background (`transition-colors duration-150`).
-- **Tap feedback:** Buttons use `active:scale-[0.98]` for subtle press feedback. Cards use `active:bg-muted/50` for tap acknowledgment on mobile.
+- **Page load:** Subtle fade-in (opacity 0→1, 300ms ease) for the main content area
+- **Hover effects:** Background color transitions (150ms ease) on table rows and list items
+- **Tap feedback:** Standard button press feedback via shadcn Button component (scale 0.98 on active)
 
 ---
 
@@ -288,38 +282,30 @@ The implementer MUST copy these values exactly into `src/index.css`:
 
 ```css
 :root {
-  --radius: 0.5rem;
-  --background: hsl(80 20% 97%);
-  --foreground: hsl(160 10% 15%);
+  --background: hsl(40 25% 97%);
+  --foreground: hsl(220 20% 16%);
   --card: hsl(0 0% 100%);
-  --card-foreground: hsl(160 10% 15%);
+  --card-foreground: hsl(220 20% 16%);
   --popover: hsl(0 0% 100%);
-  --popover-foreground: hsl(160 10% 15%);
-  --primary: hsl(155 35% 38%);
+  --popover-foreground: hsl(220 20% 16%);
+  --primary: hsl(215 55% 42%);
   --primary-foreground: hsl(0 0% 100%);
-  --secondary: hsl(80 10% 94%);
-  --secondary-foreground: hsl(160 10% 15%);
-  --muted: hsl(80 10% 94%);
-  --muted-foreground: hsl(160 5% 45%);
-  --accent: hsl(155 25% 93%);
-  --accent-foreground: hsl(160 10% 15%);
-  --destructive: hsl(0 65% 50%);
-  --border: hsl(80 10% 88%);
-  --input: hsl(80 10% 88%);
-  --ring: hsl(155 35% 38%);
-  --chart-1: hsl(155 35% 38%);
-  --chart-2: hsl(35 70% 50%);
-  --chart-3: hsl(215 40% 55%);
-  --chart-4: hsl(155 25% 60%);
-  --chart-5: hsl(80 15% 60%);
-  --sidebar-background: hsl(0 0% 100%);
-  --sidebar-foreground: hsl(160 10% 15%);
-  --sidebar-primary: hsl(155 35% 38%);
-  --sidebar-primary-foreground: hsl(0 0% 100%);
-  --sidebar-accent: hsl(155 25% 93%);
-  --sidebar-accent-foreground: hsl(160 10% 15%);
-  --sidebar-border: hsl(80 10% 88%);
-  --sidebar-ring: hsl(155 35% 38%);
+  --secondary: hsl(220 15% 95%);
+  --secondary-foreground: hsl(220 20% 20%);
+  --muted: hsl(220 15% 95%);
+  --muted-foreground: hsl(220 10% 50%);
+  --accent: hsl(215 40% 95%);
+  --accent-foreground: hsl(215 55% 30%);
+  --destructive: hsl(0 65% 52%);
+  --border: hsl(220 15% 90%);
+  --input: hsl(220 15% 90%);
+  --ring: hsl(215 55% 42%);
+  --radius: 0.5rem;
+  --chart-1: hsl(215 55% 52%);
+  --chart-2: hsl(35 75% 55%);
+  --chart-3: hsl(152 40% 48%);
+  --chart-4: hsl(215 55% 42%);
+  --chart-5: hsl(280 45% 55%);
 }
 ```
 
@@ -328,16 +314,19 @@ The implementer MUST copy these values exactly into `src/index.css`:
 ## 9. Implementation Checklist
 
 The implementer should verify:
-- [ ] Font loaded from URL: `https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap`
-- [ ] Font-family set to `'Plus Jakarta Sans', sans-serif` on body/html
-- [ ] All CSS variables copied exactly from Section 8
-- [ ] Mobile layout matches Section 4 (vertical stream, hero count, stacked cards)
-- [ ] Desktop layout matches Section 5 (two-column asymmetric, inline stats, timeline)
-- [ ] Hero element is prominent as described (large count number with tour badges)
-- [ ] Tour colors applied correctly (green/amber/blue left borders)
-- [ ] Primary action works (add new Kalendereintraege via dialog)
-- [ ] Both Wochenkalender and Kalendereintraege data merged in timeline
-- [ ] Participant names resolved from Benutzerverwaltung via extractRecordId
-- [ ] Date formatting uses German locale (dd.MM.yyyy, weekday names)
-- [ ] Colors create the calm, sage-green mood described in Section 2
-- [ ] All three data sources (apps) are fetched and used
+- [ ] Font "Plus Jakarta Sans" loaded from Google Fonts URL in index.html
+- [ ] All CSS variables copied exactly into src/index.css :root
+- [ ] Mobile layout matches Section 4 — single column, hero at top, fixed bottom action button
+- [ ] Desktop layout matches Section 5 — two-column asymmetric (65/35), hero top-left
+- [ ] Hero element is prominent — large number (48px/56px), tour distribution bar below
+- [ ] Tour-colored left borders on event cards (3px, using tour colors)
+- [ ] Tour distribution stacked bar uses three tour colors
+- [ ] Primary action button opens dialog/bottom-sheet to create Kalendereinträge record
+- [ ] Form fields: datum_von, datum_bis (datetime), teilnehmer_1, teilnehmer_2 (select from Benutzerverwaltung), tour (select)
+- [ ] Dates formatted with date-fns de locale
+- [ ] applookup fields use extractRecordId() and createRecordUrl()
+- [ ] Empty states handled with icon + message
+- [ ] Loading states with skeleton placeholders
+- [ ] Error state with retry option
+- [ ] Colors create a warm, professional mood (not clinical white)
+- [ ] All data fetched from Living Apps API via livingAppsService

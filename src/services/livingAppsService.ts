@@ -1,6 +1,6 @@
 // AUTOMATICALLY GENERATED SERVICE
 import { APP_IDS } from '@/types/app';
-import type { Benutzerverwaltung, Wochenkalender, Kalendereintraege } from '@/types/app';
+import type { Wochenkalender, Benutzerverwaltung, Kalendereintraege } from '@/types/app';
 
 // Base Configuration
 const API_BASE_URL = 'https://my.living-apps.de/rest';
@@ -31,27 +31,6 @@ async function callApi(method: string, endpoint: string, data?: any) {
 }
 
 export class LivingAppsService {
-  // --- BENUTZERVERWALTUNG ---
-  static async getBenutzerverwaltung(): Promise<Benutzerverwaltung[]> {
-    const data = await callApi('GET', `/apps/${APP_IDS.BENUTZERVERWALTUNG}/records`);
-    return Object.entries(data).map(([id, rec]: [string, any]) => ({
-      record_id: id, ...rec
-    }));
-  }
-  static async getBenutzerverwaltungEntry(id: string): Promise<Benutzerverwaltung | undefined> {
-    const data = await callApi('GET', `/apps/${APP_IDS.BENUTZERVERWALTUNG}/records/${id}`);
-    return { record_id: data.id, ...data };
-  }
-  static async createBenutzerverwaltungEntry(fields: Benutzerverwaltung['fields']) {
-    return callApi('POST', `/apps/${APP_IDS.BENUTZERVERWALTUNG}/records`, { fields });
-  }
-  static async updateBenutzerverwaltungEntry(id: string, fields: Partial<Benutzerverwaltung['fields']>) {
-    return callApi('PATCH', `/apps/${APP_IDS.BENUTZERVERWALTUNG}/records/${id}`, { fields });
-  }
-  static async deleteBenutzerverwaltungEntry(id: string) {
-    return callApi('DELETE', `/apps/${APP_IDS.BENUTZERVERWALTUNG}/records/${id}`);
-  }
-
   // --- WOCHENKALENDER ---
   static async getWochenkalender(): Promise<Wochenkalender[]> {
     const data = await callApi('GET', `/apps/${APP_IDS.WOCHENKALENDER}/records`);
@@ -71,6 +50,27 @@ export class LivingAppsService {
   }
   static async deleteWochenkalenderEntry(id: string) {
     return callApi('DELETE', `/apps/${APP_IDS.WOCHENKALENDER}/records/${id}`);
+  }
+
+  // --- BENUTZERVERWALTUNG ---
+  static async getBenutzerverwaltung(): Promise<Benutzerverwaltung[]> {
+    const data = await callApi('GET', `/apps/${APP_IDS.BENUTZERVERWALTUNG}/records`);
+    return Object.entries(data).map(([id, rec]: [string, any]) => ({
+      record_id: id, ...rec
+    }));
+  }
+  static async getBenutzerverwaltungEntry(id: string): Promise<Benutzerverwaltung | undefined> {
+    const data = await callApi('GET', `/apps/${APP_IDS.BENUTZERVERWALTUNG}/records/${id}`);
+    return { record_id: data.id, ...data };
+  }
+  static async createBenutzerverwaltungEntry(fields: Benutzerverwaltung['fields']) {
+    return callApi('POST', `/apps/${APP_IDS.BENUTZERVERWALTUNG}/records`, { fields });
+  }
+  static async updateBenutzerverwaltungEntry(id: string, fields: Partial<Benutzerverwaltung['fields']>) {
+    return callApi('PATCH', `/apps/${APP_IDS.BENUTZERVERWALTUNG}/records/${id}`, { fields });
+  }
+  static async deleteBenutzerverwaltungEntry(id: string) {
+    return callApi('DELETE', `/apps/${APP_IDS.BENUTZERVERWALTUNG}/records/${id}`);
   }
 
   // --- KALENDEREINTRAEGE ---

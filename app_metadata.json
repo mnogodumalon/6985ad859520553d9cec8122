@@ -2,6 +2,78 @@
   "appgroup_id": "6985ad859520553d9cec8122",
   "appgroup_name": "Gemeinsamer Terminkalender",
   "apps": {
+    "wochenkalender": {
+      "app_id": "6985ad71cb3a25ac36638ce4",
+      "name": "Wochenkalender",
+      "controls": {
+        "datum_von": {
+          "identifier": "datum_von",
+          "label": "Datum von",
+          "type": "date",
+          "subtype": "datetimeminute",
+          "fulltype": "date/datetimeminute",
+          "description": "A specific moment in time consisting of year, month, day, hour and minute. (Or `null`/`None`)\n\nThe field value will be a string in the format `<YYYY>-<MM>-<DD>T<HH>:<MM>` or `null`.\n\nFor example: `1879-03-14T11:30`.",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": true,
+          "in_structured_search": false,
+          "in_fulltext_search": false,
+          "in_expert_search": true
+        },
+        "datum_bis": {
+          "identifier": "datum_bis",
+          "label": "Datum bis",
+          "type": "date",
+          "subtype": "datetimeminute",
+          "fulltype": "date/datetimeminute",
+          "description": "A specific moment in time consisting of year, month, day, hour and minute. (Or `null`/`None`)\n\nThe field value will be a string in the format `<YYYY>-<MM>-<DD>T<HH>:<MM>` or `null`.\n\nFor example: `1879-03-14T11:30`.",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": true,
+          "in_text": true,
+          "in_structured_search": false,
+          "in_fulltext_search": false,
+          "in_expert_search": true
+        },
+        "teilnehmer_2": {
+          "identifier": "teilnehmer_2",
+          "label": "Teilnehmer 2",
+          "type": "applookup",
+          "subtype": "select",
+          "fulltype": "applookup/select",
+          "description": "A reference to another LivingApp record from a target lookup app (or `null`).\n\nThe field value will be a valid record URL in the form `https://<hostname>/rest/apps/<app-id>/records/<record-id>` or `null`.",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": false,
+          "in_expert_search": true,
+          "lookup_app": "https://my.living-apps.de/rest/apps/6985ad6bb11d2147bcc3466a"
+        },
+        "tour": {
+          "identifier": "tour",
+          "label": "Tour",
+          "type": "lookup",
+          "subtype": "select",
+          "fulltype": "lookup/select",
+          "description": "One selected option of multiple available options (or `null`).\n\nThe available options are defined in the `lookup_data` attribute of this control's LivingApp.\n\nThe field value will be the key in this `lookup_data` attribute or `null`.",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": false,
+          "in_expert_search": true,
+          "lookup_data": {
+            "tour_2": "Tour 2",
+            "tour_3": "Tour 3",
+            "tour_1": "Tour 1"
+          }
+        }
+      }
+    },
     "benutzerverwaltung": {
       "app_id": "6985ad6bb11d2147bcc3466a",
       "name": "Benutzerverwaltung",
@@ -80,78 +152,6 @@
           "in_structured_search": false,
           "in_fulltext_search": false,
           "in_expert_search": true
-        }
-      }
-    },
-    "wochenkalender": {
-      "app_id": "6985ad71cb3a25ac36638ce4",
-      "name": "Wochenkalender",
-      "controls": {
-        "datum_von": {
-          "identifier": "datum_von",
-          "label": "Datum von",
-          "type": "date",
-          "subtype": "datetimeminute",
-          "fulltype": "date/datetimeminute",
-          "description": "A specific moment in time consisting of year, month, day, hour and minute. (Or `null`/`None`)\n\nThe field value will be a string in the format `<YYYY>-<MM>-<DD>T<HH>:<MM>` or `null`.\n\nFor example: `1879-03-14T11:30`.",
-          "required": null,
-          "in_list": true,
-          "in_mobile_list": true,
-          "in_text": true,
-          "in_structured_search": false,
-          "in_fulltext_search": false,
-          "in_expert_search": true
-        },
-        "datum_bis": {
-          "identifier": "datum_bis",
-          "label": "Datum bis",
-          "type": "date",
-          "subtype": "datetimeminute",
-          "fulltype": "date/datetimeminute",
-          "description": "A specific moment in time consisting of year, month, day, hour and minute. (Or `null`/`None`)\n\nThe field value will be a string in the format `<YYYY>-<MM>-<DD>T<HH>:<MM>` or `null`.\n\nFor example: `1879-03-14T11:30`.",
-          "required": null,
-          "in_list": true,
-          "in_mobile_list": true,
-          "in_text": true,
-          "in_structured_search": false,
-          "in_fulltext_search": false,
-          "in_expert_search": true
-        },
-        "teilnehmer_2": {
-          "identifier": "teilnehmer_2",
-          "label": "Teilnehmer 2",
-          "type": "applookup",
-          "subtype": "select",
-          "fulltype": "applookup/select",
-          "description": "A reference to another LivingApp record from a target lookup app (or `null`).\n\nThe field value will be a valid record URL in the form `https://<hostname>/rest/apps/<app-id>/records/<record-id>` or `null`.",
-          "required": null,
-          "in_list": true,
-          "in_mobile_list": false,
-          "in_text": false,
-          "in_structured_search": false,
-          "in_fulltext_search": false,
-          "in_expert_search": true,
-          "lookup_app": "https://my.living-apps.de/rest/apps/6985ad6bb11d2147bcc3466a"
-        },
-        "tour": {
-          "identifier": "tour",
-          "label": "Tour",
-          "type": "lookup",
-          "subtype": "select",
-          "fulltype": "lookup/select",
-          "description": "One selected option of multiple available options (or `null`).\n\nThe available options are defined in the `lookup_data` attribute of this control's LivingApp.\n\nThe field value will be the key in this `lookup_data` attribute or `null`.",
-          "required": null,
-          "in_list": true,
-          "in_mobile_list": false,
-          "in_text": false,
-          "in_structured_search": false,
-          "in_fulltext_search": false,
-          "in_expert_search": true,
-          "lookup_data": {
-            "tour_3": "Tour 3",
-            "tour_1": "Tour 1",
-            "tour_2": "Tour 2"
-          }
         }
       }
     },
@@ -246,8 +246,8 @@
   },
   "metadata": {
     "apps_list": [
-      "Benutzerverwaltung",
       "Wochenkalender",
+      "Benutzerverwaltung",
       "Kalendereintr\u00e4ge"
     ]
   }

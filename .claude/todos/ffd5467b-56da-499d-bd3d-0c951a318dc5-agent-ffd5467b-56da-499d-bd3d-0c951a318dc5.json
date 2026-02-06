@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Run frontend-design skill to create design_brief.md",
+    "status": "completed",
+    "activeForm": "Creating design brief with frontend-design skill"
+  },
+  {
+    "content": "Run frontend-impl skill to implement Dashboard.tsx",
+    "status": "completed",
+    "activeForm": "Implementing Dashboard.tsx with frontend-impl skill"
+  },
+  {
+    "content": "Build the project with npm run build",
+    "status": "completed",
+    "activeForm": "Building the project"
+  },
+  {
+    "content": "Deploy to GitHub using deploy tool",
+    "status": "in_progress",
+    "activeForm": "Deploying to GitHub"
+  }
+]
