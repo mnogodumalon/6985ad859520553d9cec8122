@@ -2,9 +2,9 @@
   "appgroup_id": "6985ad859520553d9cec8122",
   "appgroup_name": "Gemeinsamer Terminkalender",
   "apps": {
-    "kalendereintraege": {
-      "app_id": "6985ad70362c1183b8ef9c05",
-      "name": "Kalendereintr\u00e4ge",
+    "wochenkalender": {
+      "app_id": "6985ad71cb3a25ac36638ce4",
+      "name": "Wochenkalender",
       "controls": {
         "datum_von": {
           "identifier": "datum_von",
@@ -35,22 +35,6 @@
           "in_structured_search": false,
           "in_fulltext_search": false,
           "in_expert_search": true
-        },
-        "teilnehmer_1": {
-          "identifier": "teilnehmer_1",
-          "label": "Teilnehmer 1",
-          "type": "applookup",
-          "subtype": "select",
-          "fulltype": "applookup/select",
-          "description": "A reference to another LivingApp record from a target lookup app (or `null`).\n\nThe field value will be a valid record URL in the form `https://<hostname>/rest/apps/<app-id>/records/<record-id>` or `null`.",
-          "required": null,
-          "in_list": true,
-          "in_mobile_list": false,
-          "in_text": false,
-          "in_structured_search": false,
-          "in_fulltext_search": false,
-          "in_expert_search": true,
-          "lookup_app": "https://my.living-apps.de/rest/apps/6985ad6bb11d2147bcc3466a"
         },
         "teilnehmer_2": {
           "identifier": "teilnehmer_2",
@@ -83,9 +67,9 @@
           "in_fulltext_search": false,
           "in_expert_search": true,
           "lookup_data": {
+            "tour_3": "Tour 3",
             "tour_1": "Tour 1",
-            "tour_2": "Tour 2",
-            "tour_3": "Tour 3"
+            "tour_2": "Tour 2"
           }
         }
       }
@@ -177,9 +161,9 @@
           "fulltype": "lookup/select",
           "description": "One selected option of multiple available options (or `null`).\n\nThe available options are defined in the `lookup_data` attribute of this control's LivingApp.\n\nThe field value will be the key in this `lookup_data` attribute or `null`.",
           "required": null,
-          "in_list": true,
-          "in_mobile_list": true,
-          "in_text": true,
+          "in_list": false,
+          "in_mobile_list": false,
+          "in_text": false,
           "in_structured_search": false,
           "in_fulltext_search": false,
           "in_expert_search": true,
@@ -223,9 +207,9 @@
         }
       }
     },
-    "wochenkalender": {
-      "app_id": "6985ad71cb3a25ac36638ce4",
-      "name": "Wochenkalender",
+    "kalendereintraege": {
+      "app_id": "6985ad70362c1183b8ef9c05",
+      "name": "Kalendereintr\u00e4ge",
       "controls": {
         "datum_von": {
           "identifier": "datum_von",
@@ -256,6 +240,22 @@
           "in_structured_search": false,
           "in_fulltext_search": false,
           "in_expert_search": true
+        },
+        "teilnehmer_1": {
+          "identifier": "teilnehmer_1",
+          "label": "Teilnehmer 1",
+          "type": "applookup",
+          "subtype": "select",
+          "fulltype": "applookup/select",
+          "description": "A reference to another LivingApp record from a target lookup app (or `null`).\n\nThe field value will be a valid record URL in the form `https://<hostname>/rest/apps/<app-id>/records/<record-id>` or `null`.",
+          "required": null,
+          "in_list": true,
+          "in_mobile_list": false,
+          "in_text": false,
+          "in_structured_search": false,
+          "in_fulltext_search": false,
+          "in_expert_search": true,
+          "lookup_app": "https://my.living-apps.de/rest/apps/6985ad6bb11d2147bcc3466a"
         },
         "teilnehmer_2": {
           "identifier": "teilnehmer_2",
@@ -288,9 +288,9 @@
           "in_fulltext_search": false,
           "in_expert_search": true,
           "lookup_data": {
+            "tour_3": "Tour 3",
             "tour_1": "Tour 1",
-            "tour_2": "Tour 2",
-            "tour_3": "Tour 3"
+            "tour_2": "Tour 2"
           }
         }
       }
@@ -298,9 +298,9 @@
   },
   "metadata": {
     "apps_list": [
-      "Kalendereintr\u00e4ge",
+      "Wochenkalender",
       "Benutzerverwaltung",
-      "Wochenkalender"
+      "Kalendereintr\u00e4ge"
     ]
   }
 }
