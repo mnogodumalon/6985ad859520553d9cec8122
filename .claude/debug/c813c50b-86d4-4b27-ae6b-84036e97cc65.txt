@@ -1,0 +1,606 @@
+2026-02-06T09:00:15.194Z [ERROR] Failed to save config with lock: Error: ENOENT: no such file or directory, lstat '/home/user/app/.claude.json'
+2026-02-06T09:00:15.195Z [DEBUG] Writing to temp file: /home/user/app/.claude.json.tmp.535.1770368415195
+2026-02-06T09:00:15.195Z [DEBUG] Setting permissions for new file: 600
+2026-02-06T09:00:15.198Z [DEBUG] Temp file written successfully, size: 103 bytes
+2026-02-06T09:00:15.198Z [DEBUG] Renaming /home/user/app/.claude.json.tmp.535.1770368415195 to /home/user/app/.claude.json
+2026-02-06T09:00:15.198Z [DEBUG] File /home/user/app/.claude.json written atomically
+2026-02-06T09:00:15.282Z [DEBUG] [LSP MANAGER] initializeLspServerManager() called
+2026-02-06T09:00:15.283Z [DEBUG] [LSP MANAGER] Created manager instance, state=pending
+2026-02-06T09:00:15.283Z [DEBUG] [LSP MANAGER] Starting async initialization (generation 1)
+2026-02-06T09:00:15.283Z [DEBUG] [LSP SERVER MANAGER] initialize() called
+2026-02-06T09:00:15.283Z [DEBUG] [LSP SERVER MANAGER] Calling getAllLspServers()
+2026-02-06T09:00:15.290Z [DEBUG] Writing to temp file: /home/user/app/.claude.json.tmp.535.1770368415290
+2026-02-06T09:00:15.290Z [DEBUG] Preserving file permissions: 100600
+2026-02-06T09:00:15.293Z [DEBUG] Temp file written successfully, size: 183 bytes
+2026-02-06T09:00:15.293Z [DEBUG] Applied original permissions to temp file
+2026-02-06T09:00:15.293Z [DEBUG] Renaming /home/user/app/.claude.json.tmp.535.1770368415290 to /home/user/app/.claude.json
+2026-02-06T09:00:15.293Z [DEBUG] File /home/user/app/.claude.json written atomically
+2026-02-06T09:00:15.325Z [DEBUG] Writing to temp file: /home/user/app/.claude.json.tmp.535.1770368415325
+2026-02-06T09:00:15.325Z [DEBUG] Preserving file permissions: 100600
+2026-02-06T09:00:15.326Z [DEBUG] Temp file written successfully, size: 220 bytes
+2026-02-06T09:00:15.326Z [DEBUG] Applied original permissions to temp file
+2026-02-06T09:00:15.326Z [DEBUG] Renaming /home/user/app/.claude.json.tmp.535.1770368415325 to /home/user/app/.claude.json
+2026-02-06T09:00:15.326Z [DEBUG] File /home/user/app/.claude.json written atomically
+2026-02-06T09:00:15.327Z [DEBUG] Writing to temp file: /home/user/app/.claude.json.tmp.535.1770368415327
+2026-02-06T09:00:15.327Z [DEBUG] Preserving file permissions: 100600
+2026-02-06T09:00:15.328Z [DEBUG] Temp file written successfully, size: 255 bytes
+2026-02-06T09:00:15.328Z [DEBUG] Applied original permissions to temp file
+2026-02-06T09:00:15.328Z [DEBUG] Renaming /home/user/app/.claude.json.tmp.535.1770368415327 to /home/user/app/.claude.json
+2026-02-06T09:00:15.328Z [DEBUG] File /home/user/app/.claude.json written atomically
+2026-02-06T09:00:15.330Z [DEBUG] Found 0 plugins (0 enabled, 0 disabled)
+2026-02-06T09:00:15.362Z [DEBUG] Total LSP servers loaded: 0
+2026-02-06T09:00:15.371Z [DEBUG] [LSP SERVER MANAGER] getAllLspServers returned 0 server(s)
+2026-02-06T09:00:15.371Z [DEBUG] LSP manager initialized with 0 servers
+2026-02-06T09:00:15.372Z [DEBUG] LSP server manager initialized successfully
+2026-02-06T09:00:15.372Z [DEBUG] LSP notification handlers registered successfully for all 0 server(s)
+2026-02-06T09:00:15.449Z [DEBUG] Loading skills from directories: managed=/etc/claude-code/.claude/skills, user=/home/user/app/.claude/skills, project=/home/user/app/.claude/skills
+2026-02-06T09:00:15.450Z [DEBUG] >>>>> getPluginSkills CALLED <<<<<
+2026-02-06T09:00:15.652Z [DEBUG] Creating shell snapshot for bash (/bin/bash)
+2026-02-06T09:00:15.652Z [DEBUG] Looking for shell config file: /home/user/app/.bashrc
+2026-02-06T09:00:15.652Z [DEBUG] Shell config file not found: /home/user/app/.bashrc, creating snapshot with Claude Code defaults only
+2026-02-06T09:00:15.652Z [DEBUG] Snapshots directory: /home/user/app/.claude/shell-snapshots
+2026-02-06T09:00:15.653Z [DEBUG] Creating snapshot at: /home/user/app/.claude/shell-snapshots/snapshot-bash-1770368415652-l34r38.sh
+2026-02-06T09:00:15.653Z [DEBUG] Shell binary exists: true
+2026-02-06T09:00:15.653Z [DEBUG] Execution timeout: 10000ms
+2026-02-06T09:00:15.656Z [DEBUG] Writing to temp file: /home/user/app/.claude/todos/c813c50b-86d4-4b27-ae6b-84036e97cc65-agent-c813c50b-86d4-4b27-ae6b-84036e97cc65.json.tmp.535.1770368415656
+2026-02-06T09:00:15.657Z [DEBUG] Temp file written successfully, size: 2 bytes
+2026-02-06T09:00:15.657Z [DEBUG] Renaming /home/user/app/.claude/todos/c813c50b-86d4-4b27-ae6b-84036e97cc65-agent-c813c50b-86d4-4b27-ae6b-84036e97cc65.json.tmp.535.1770368415656 to /home/user/app/.claude/todos/c813c50b-86d4-4b27-ae6b-84036e97cc65-agent-c813c50b-86d4-4b27-ae6b-84036e97cc65.json
+2026-02-06T09:00:15.657Z [DEBUG] File /home/user/app/.claude/todos/c813c50b-86d4-4b27-ae6b-84036e97cc65-agent-c813c50b-86d4-4b27-ae6b-84036e97cc65.json written atomically
+2026-02-06T09:00:15.659Z [DEBUG] getPluginSkills: Processing 0 enabled plugins
+2026-02-06T09:00:15.659Z [DEBUG] Total plugin skills loaded: 0
+2026-02-06T09:00:15.659Z [DEBUG] Total plugin commands loaded: 0
+2026-02-06T09:00:15.659Z [DEBUG] Registered 0 hooks from 0 plugins
+2026-02-06T09:00:15.660Z [DEBUG] Loaded 2 unique skills (managed: 0, user: 0, project: 2, duplicates removed: 0)
+2026-02-06T09:00:15.664Z [DEBUG] getSkills returning: 2 skill dir commands, 0 plugin skills
+2026-02-06T09:00:15.664Z [DEBUG] Total plugin agents loaded: 0
+2026-02-06T09:00:15.687Z [DEBUG] Getting matching hook commands for SessionStart with query: startup
+2026-02-06T09:00:15.687Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:15.687Z [DEBUG] Matched 0 unique hooks for query "startup" (0 before deduplication)
+2026-02-06T09:00:15.721Z [DEBUG] Writing to temp file: /home/user/app/.claude.json.tmp.535.1770368415721
+2026-02-06T09:00:15.721Z [DEBUG] Preserving file permissions: 100600
+2026-02-06T09:00:15.723Z [DEBUG] Temp file written successfully, size: 337 bytes
+2026-02-06T09:00:15.723Z [DEBUG] Applied original permissions to temp file
+2026-02-06T09:00:15.723Z [DEBUG] Renaming /home/user/app/.claude.json.tmp.535.1770368415721 to /home/user/app/.claude.json
+2026-02-06T09:00:15.723Z [DEBUG] File /home/user/app/.claude.json written atomically
+2026-02-06T09:00:15.724Z [DEBUG] Writing to temp file: /home/user/app/.claude.json.tmp.535.1770368415724
+2026-02-06T09:00:15.724Z [DEBUG] Preserving file permissions: 100600
+2026-02-06T09:00:15.725Z [DEBUG] Temp file written successfully, size: 367 bytes
+2026-02-06T09:00:15.725Z [DEBUG] Applied original permissions to temp file
+2026-02-06T09:00:15.725Z [DEBUG] Renaming /home/user/app/.claude.json.tmp.535.1770368415724 to /home/user/app/.claude.json
+2026-02-06T09:00:15.725Z [DEBUG] File /home/user/app/.claude.json written atomically
+2026-02-06T09:00:15.802Z [DEBUG] Git remote URL: null
+2026-02-06T09:00:15.802Z [DEBUG] No git remote URL found
+2026-02-06T09:00:15.802Z [DEBUG] Not in a GitHub repository, skipping path mapping update
+2026-02-06T09:00:15.813Z [DEBUG] Skills and commands included in Skill tool: frontend-impl, frontend-design
+2026-02-06T09:00:15.813Z [DEBUG] Slash commands included in SlashCommand tool:
+2026-02-06T09:00:15.822Z [DEBUG] Shell snapshot created successfully (366 bytes)
+2026-02-06T09:00:15.978Z [DEBUG] Getting matching hook commands for SubagentStart with query: Explore
+2026-02-06T09:00:15.978Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:15.978Z [DEBUG] Matched 0 unique hooks for query "Explore" (0 before deduplication)
+2026-02-06T09:00:15.997Z [DEBUG] Getting matching hook commands for SubagentStart with query: Plan
+2026-02-06T09:00:15.997Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:15.997Z [DEBUG] Matched 0 unique hooks for query "Plan" (0 before deduplication)
+2026-02-06T09:00:16.010Z [DEBUG] Total plugin output styles loaded: 0
+2026-02-06T09:00:16.038Z [DEBUG] Metrics opt-out API response: enabled=true, vcsLinking=false
+2026-02-06T09:00:16.077Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-06T09:00:16.077Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-06T09:00:16.078Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-06T09:00:16.078Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-06T09:00:16.081Z [DEBUG] Writing to temp file: /home/user/app/.claude.json.tmp.535.1770368416081
+2026-02-06T09:00:16.081Z [DEBUG] Preserving file permissions: 100600
+2026-02-06T09:00:16.082Z [DEBUG] Temp file written successfully, size: 396 bytes
+2026-02-06T09:00:16.082Z [DEBUG] Applied original permissions to temp file
+2026-02-06T09:00:16.082Z [DEBUG] Renaming /home/user/app/.claude.json.tmp.535.1770368416081 to /home/user/app/.claude.json
+2026-02-06T09:00:16.082Z [DEBUG] File /home/user/app/.claude.json written atomically
+2026-02-06T09:00:16.085Z [DEBUG] Getting matching hook commands for UserPromptSubmit with query: undefined
+2026-02-06T09:00:16.085Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:16.085Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-02-06T09:00:16.551Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:00:17.081Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:00:17.992Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:00:18.303Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2026-02-06T09:00:18.303Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:18.304Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-02-06T09:00:20.959Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-02-06T09:00:20.959Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-02-06T09:00:20.959Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:20.959Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-02-06T09:00:20.964Z [DEBUG] Writing to temp file: /home/user/app/.claude/todos/c813c50b-86d4-4b27-ae6b-84036e97cc65-agent-c813c50b-86d4-4b27-ae6b-84036e97cc65.json.tmp.535.1770368420964
+2026-02-06T09:00:20.964Z [DEBUG] Preserving file permissions: 100600
+2026-02-06T09:00:20.965Z [DEBUG] Temp file written successfully, size: 569 bytes
+2026-02-06T09:00:20.966Z [DEBUG] Applied original permissions to temp file
+2026-02-06T09:00:20.966Z [DEBUG] Renaming /home/user/app/.claude/todos/c813c50b-86d4-4b27-ae6b-84036e97cc65-agent-c813c50b-86d4-4b27-ae6b-84036e97cc65.json.tmp.535.1770368420964 to /home/user/app/.claude/todos/c813c50b-86d4-4b27-ae6b-84036e97cc65-agent-c813c50b-86d4-4b27-ae6b-84036e97cc65.json
+2026-02-06T09:00:20.966Z [DEBUG] File /home/user/app/.claude/todos/c813c50b-86d4-4b27-ae6b-84036e97cc65-agent-c813c50b-86d4-4b27-ae6b-84036e97cc65.json written atomically
+2026-02-06T09:00:20.969Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-02-06T09:00:20.969Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:20.969Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-02-06T09:00:20.982Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-06T09:00:20.983Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-06T09:00:20.983Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-06T09:00:20.983Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-06T09:00:21.608Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2026-02-06T09:00:21.608Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:21.608Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-02-06T09:00:23.134Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:00:28.343Z [DEBUG] executePreToolHooks called for tool: Task
+2026-02-06T09:00:28.343Z [DEBUG] executePreToolHooks called for tool: Read
+2026-02-06T09:00:28.343Z [DEBUG] Getting matching hook commands for PreToolUse with query: Task
+2026-02-06T09:00:28.343Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:28.343Z [DEBUG] Matched 0 unique hooks for query "Task" (0 before deduplication)
+2026-02-06T09:00:28.343Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-02-06T09:00:28.343Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:28.343Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:28.355Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-02-06T09:00:28.355Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:28.355Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:28.359Z [DEBUG] Getting matching hook commands for SubagentStart with query: Explore
+2026-02-06T09:00:28.359Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:28.359Z [DEBUG] Matched 0 unique hooks for query "Explore" (0 before deduplication)
+2026-02-06T09:00:28.970Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:00:30.111Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-02-06T09:00:30.111Z [DEBUG] executePreToolHooks called for tool: Glob
+2026-02-06T09:00:30.112Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-02-06T09:00:30.112Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:30.112Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-06T09:00:30.112Z [DEBUG] Getting matching hook commands for PreToolUse with query: Glob
+2026-02-06T09:00:30.112Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:30.112Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2026-02-06T09:00:30.156Z [DEBUG] No session environment scripts found
+2026-02-06T09:00:30.267Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-02-06T09:00:30.267Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:30.267Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-06T09:00:30.729Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:00:32.059Z [DEBUG] Ripgrep first use test: PASSED (mode=builtin, path=/usr/local/lib/python3.14/site-packages/claude_agent_sdk/_bundled/claude)
+2026-02-06T09:00:32.267Z [DEBUG] "rg error (signal=null, code=2, stderr: rg: Resource temporarily unavailable (os error 11)\n), 3078 results"
+2026-02-06T09:00:32.269Z [DEBUG] Getting matching hook commands for PostToolUse with query: Glob
+2026-02-06T09:00:32.269Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:32.269Z [DEBUG] Matched 0 unique hooks for query "Glob" (0 before deduplication)
+2026-02-06T09:00:32.831Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:00:33.778Z [ERROR] "AxiosError: Error\n    at NO (/$bunfs/root/claude:27:1143)\n    at <anonymous> (/$bunfs/root/claude:32:10054)\n    at emit (node:events:92:22)\n    at endReadableNT (internal:streams/readable:862:50)\n    at processTicksAndRejections (native:7:39)\n    at request (/$bunfs/root/claude:34:2147)\n    at processTicksAndRejections (native:7:39)"
+2026-02-06T09:00:34.039Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-02-06T09:00:34.039Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-02-06T09:00:34.040Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-02-06T09:00:34.040Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-02-06T09:00:34.040Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:34.040Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-06T09:00:34.040Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-02-06T09:00:34.040Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:34.040Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-06T09:00:34.040Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-02-06T09:00:34.040Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:34.040Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-06T09:00:34.076Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-02-06T09:00:34.076Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:34.076Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-06T09:00:34.087Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-02-06T09:00:34.087Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:34.088Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-06T09:00:34.117Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-02-06T09:00:34.117Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:34.117Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-06T09:00:34.473Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:00:34.554Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:00:34.629Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:00:35.642Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:00:37.213Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-02-06T09:00:37.213Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-02-06T09:00:37.213Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-02-06T09:00:37.213Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-02-06T09:00:37.213Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-02-06T09:00:37.213Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:37.214Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-06T09:00:37.214Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-02-06T09:00:37.214Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:37.214Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-06T09:00:37.214Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-02-06T09:00:37.214Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:37.214Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-06T09:00:37.214Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-02-06T09:00:37.214Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:37.214Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-06T09:00:37.259Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-02-06T09:00:37.259Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:37.259Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-06T09:00:37.279Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-02-06T09:00:37.279Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:37.279Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-06T09:00:37.286Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-02-06T09:00:37.286Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:37.286Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-06T09:00:37.317Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-02-06T09:00:37.317Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:37.317Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-06T09:00:37.651Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:00:37.687Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:00:37.737Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:00:37.757Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:00:38.439Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:00:40.012Z [DEBUG] executePreToolHooks called for tool: Read
+2026-02-06T09:00:40.013Z [DEBUG] executePreToolHooks called for tool: Read
+2026-02-06T09:00:40.013Z [DEBUG] executePreToolHooks called for tool: Read
+2026-02-06T09:00:40.013Z [DEBUG] executePreToolHooks called for tool: Read
+2026-02-06T09:00:40.013Z [DEBUG] executePreToolHooks called for tool: Read
+2026-02-06T09:00:40.013Z [DEBUG] executePreToolHooks called for tool: Read
+2026-02-06T09:00:40.013Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-02-06T09:00:40.013Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:40.013Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:40.013Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-02-06T09:00:40.013Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:40.013Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:40.013Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-02-06T09:00:40.013Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:40.013Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:40.013Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-02-06T09:00:40.013Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:40.013Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:40.013Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-02-06T09:00:40.013Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:40.013Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:40.013Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-02-06T09:00:40.013Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:40.013Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:40.031Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-02-06T09:00:40.031Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:40.031Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:40.031Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-02-06T09:00:40.031Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:40.031Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:40.031Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-02-06T09:00:40.031Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:40.031Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:40.031Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-02-06T09:00:40.031Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:40.031Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:40.032Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-02-06T09:00:40.032Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:40.032Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:40.032Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-02-06T09:00:40.032Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:40.032Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:41.355Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:00:42.928Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-02-06T09:00:42.928Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-02-06T09:00:42.928Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:42.928Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-06T09:00:42.928Z [DEBUG] executePreToolHooks called for tool: Read
+2026-02-06T09:00:42.928Z [DEBUG] executePreToolHooks called for tool: Read
+2026-02-06T09:00:42.928Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-02-06T09:00:42.928Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:42.928Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:42.928Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-02-06T09:00:42.928Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:42.928Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:42.942Z [ERROR] "Error: Error: EISDIR: illegal operation on a directory, read\n    at readFileSync (unknown)\n    at readFileSync (/$bunfs/root/claude:12:370)\n    at $aI (/$bunfs/root/claude:4240:16975)\n    at call (/$bunfs/root/claude:1456:912)\n    at call (/$bunfs/root/claude:1452:5768)\n    at gt1 (/$bunfs/root/claude:2161:20837)\n    at processTicksAndRejections (native:7:39)"
+2026-02-06T09:00:42.943Z [ERROR] "Error: Error: EISDIR: illegal operation on a directory, read\n    at readFileSync (unknown)\n    at readFileSync (/$bunfs/root/claude:12:370)\n    at $aI (/$bunfs/root/claude:4240:16975)\n    at call (/$bunfs/root/claude:1456:912)\n    at call (/$bunfs/root/claude:1452:5768)\n    at gt1 (/$bunfs/root/claude:2161:20837)\n    at processTicksAndRejections (native:7:39)"
+2026-02-06T09:00:42.963Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-02-06T09:00:42.963Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:42.963Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-06T09:00:43.376Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:00:43.743Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:00:44.677Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-02-06T09:00:44.677Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-02-06T09:00:44.677Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-02-06T09:00:44.677Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:44.677Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-06T09:00:44.677Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-02-06T09:00:44.677Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:44.677Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-06T09:00:44.709Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-02-06T09:00:44.709Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:44.709Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-06T09:00:44.720Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-02-06T09:00:44.720Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:44.720Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-06T09:00:45.161Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:00:45.201Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:00:45.338Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:00:45.904Z [DEBUG] executePreToolHooks called for tool: Read
+2026-02-06T09:00:45.904Z [DEBUG] executePreToolHooks called for tool: Read
+2026-02-06T09:00:45.904Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-02-06T09:00:45.904Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:45.904Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:45.904Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-02-06T09:00:45.904Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:45.905Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:45.914Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-02-06T09:00:45.914Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:45.914Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:46.155Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-02-06T09:00:46.155Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:46.155Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:47.781Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:00:48.934Z [DEBUG] executePreToolHooks called for tool: Read
+2026-02-06T09:00:48.934Z [DEBUG] executePreToolHooks called for tool: Read
+2026-02-06T09:00:48.934Z [DEBUG] executePreToolHooks called for tool: Read
+2026-02-06T09:00:48.934Z [DEBUG] executePreToolHooks called for tool: Read
+2026-02-06T09:00:48.934Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-02-06T09:00:48.934Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:48.934Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:48.934Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-02-06T09:00:48.934Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:48.934Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:48.934Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-02-06T09:00:48.934Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:48.934Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:48.934Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-02-06T09:00:48.934Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:48.934Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:48.987Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-02-06T09:00:48.987Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:48.987Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:48.987Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-02-06T09:00:48.987Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:48.987Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:48.987Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-02-06T09:00:48.987Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:48.987Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:48.987Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-02-06T09:00:48.987Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:48.987Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:49.173Z [ERROR] "AxiosError: Error\n    at NO (/$bunfs/root/claude:27:1143)\n    at <anonymous> (/$bunfs/root/claude:32:10054)\n    at emit (node:events:92:22)\n    at endReadableNT (internal:streams/readable:862:50)\n    at processTicksAndRejections (native:7:39)\n    at request (/$bunfs/root/claude:34:2147)\n    at processTicksAndRejections (native:7:39)"
+2026-02-06T09:00:50.799Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:00:52.138Z [DEBUG] executePreToolHooks called for tool: Read
+2026-02-06T09:00:52.138Z [DEBUG] executePreToolHooks called for tool: Read
+2026-02-06T09:00:52.138Z [DEBUG] executePreToolHooks called for tool: Read
+2026-02-06T09:00:52.138Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-02-06T09:00:52.138Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:52.138Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:52.138Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-02-06T09:00:52.138Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:52.138Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:52.138Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-02-06T09:00:52.138Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:52.138Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:52.144Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-02-06T09:00:52.144Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:52.144Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:52.144Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-02-06T09:00:52.144Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:52.144Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:52.144Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-02-06T09:00:52.144Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:00:52.144Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:00:53.539Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:01:07.399Z [ERROR] "AxiosError: Error\n    at NO (/$bunfs/root/claude:27:1143)\n    at <anonymous> (/$bunfs/root/claude:32:10054)\n    at emit (node:events:92:22)\n    at endReadableNT (internal:streams/readable:862:50)\n    at processTicksAndRejections (native:7:39)\n    at request (/$bunfs/root/claude:34:2147)\n    at processTicksAndRejections (native:7:39)"
+2026-02-06T09:01:26.380Z [DEBUG] Getting matching hook commands for SubagentStop with query: undefined
+2026-02-06T09:01:26.380Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:01:26.380Z [DEBUG] Matched 0 unique hooks for query "no match query" (0 before deduplication)
+2026-02-06T09:01:26.383Z [DEBUG] Getting matching hook commands for PostToolUse with query: Task
+2026-02-06T09:01:26.383Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:01:26.383Z [DEBUG] Matched 0 unique hooks for query "Task" (0 before deduplication)
+2026-02-06T09:01:26.395Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-06T09:01:26.395Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-06T09:01:26.395Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-06T09:01:26.395Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-06T09:01:28.419Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:01:30.540Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-02-06T09:01:30.540Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-02-06T09:01:30.540Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:01:30.540Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-02-06T09:01:30.542Z [DEBUG] Writing to temp file: /home/user/app/.claude/todos/c813c50b-86d4-4b27-ae6b-84036e97cc65-agent-c813c50b-86d4-4b27-ae6b-84036e97cc65.json.tmp.535.1770368490542
+2026-02-06T09:01:30.542Z [DEBUG] Preserving file permissions: 100600
+2026-02-06T09:01:30.544Z [DEBUG] Temp file written successfully, size: 571 bytes
+2026-02-06T09:01:30.544Z [DEBUG] Applied original permissions to temp file
+2026-02-06T09:01:30.544Z [DEBUG] Renaming /home/user/app/.claude/todos/c813c50b-86d4-4b27-ae6b-84036e97cc65-agent-c813c50b-86d4-4b27-ae6b-84036e97cc65.json.tmp.535.1770368490542 to /home/user/app/.claude/todos/c813c50b-86d4-4b27-ae6b-84036e97cc65-agent-c813c50b-86d4-4b27-ae6b-84036e97cc65.json
+2026-02-06T09:01:30.544Z [DEBUG] File /home/user/app/.claude/todos/c813c50b-86d4-4b27-ae6b-84036e97cc65-agent-c813c50b-86d4-4b27-ae6b-84036e97cc65.json written atomically
+2026-02-06T09:01:30.545Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-02-06T09:01:30.545Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:01:30.545Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-02-06T09:01:30.556Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-06T09:01:30.556Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-06T09:01:30.556Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-06T09:01:30.556Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-06T09:01:32.276Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:01:34.102Z [DEBUG] executePreToolHooks called for tool: Read
+2026-02-06T09:01:34.102Z [DEBUG] executePreToolHooks called for tool: Read
+2026-02-06T09:01:34.102Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-02-06T09:01:34.102Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:01:34.102Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:01:34.102Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-02-06T09:01:34.102Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:01:34.102Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:01:34.112Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-02-06T09:01:34.112Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:01:34.112Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:01:34.298Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-02-06T09:01:34.298Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:01:34.298Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:01:34.310Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-06T09:01:34.310Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-06T09:01:34.310Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-06T09:01:34.310Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-06T09:01:36.987Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:01:39.348Z [DEBUG] executePreToolHooks called for tool: Read
+2026-02-06T09:01:39.349Z [DEBUG] executePreToolHooks called for tool: Read
+2026-02-06T09:01:39.349Z [DEBUG] executePreToolHooks called for tool: Read
+2026-02-06T09:01:39.349Z [DEBUG] executePreToolHooks called for tool: Read
+2026-02-06T09:01:39.349Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-02-06T09:01:39.349Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:01:39.349Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:01:39.349Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-02-06T09:01:39.349Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:01:39.349Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:01:39.349Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-02-06T09:01:39.349Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:01:39.349Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:01:39.349Z [DEBUG] Getting matching hook commands for PreToolUse with query: Read
+2026-02-06T09:01:39.349Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:01:39.349Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:01:39.360Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-02-06T09:01:39.360Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:01:39.360Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:01:39.360Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-02-06T09:01:39.360Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:01:39.360Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:01:39.361Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-02-06T09:01:39.361Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:01:39.361Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:01:39.361Z [DEBUG] Getting matching hook commands for PostToolUse with query: Read
+2026-02-06T09:01:39.361Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:01:39.361Z [DEBUG] Matched 0 unique hooks for query "Read" (0 before deduplication)
+2026-02-06T09:01:39.397Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-06T09:01:39.397Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-06T09:01:39.397Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-06T09:01:39.397Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-06T09:01:41.487Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:01:41.515Z [ERROR] "AxiosError: Error\n    at NO (/$bunfs/root/claude:27:1143)\n    at <anonymous> (/$bunfs/root/claude:32:10054)\n    at emit (node:events:92:22)\n    at endReadableNT (internal:streams/readable:862:50)\n    at processTicksAndRejections (native:7:39)\n    at request (/$bunfs/root/claude:34:2147)\n    at processTicksAndRejections (native:7:39)"
+2026-02-06T09:01:42.532Z [DEBUG] executePreToolHooks called for tool: Skill
+2026-02-06T09:01:42.532Z [DEBUG] Getting matching hook commands for PreToolUse with query: Skill
+2026-02-06T09:01:42.532Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:01:42.532Z [DEBUG] Matched 0 unique hooks for query "Skill" (0 before deduplication)
+2026-02-06T09:01:42.533Z [DEBUG] "Permission suggestions for Skill: [\n  {\n    \"type\": \"addRules\",\n    \"rules\": [\n      {\n        \"toolName\": \"Skill\",\n        \"ruleContent\": \"frontend-design\"\n      }\n    ],\n    \"behavior\": \"allow\",\n    \"destination\": \"localSettings\"\n  }\n]"
+2026-02-06T09:01:42.543Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-06T09:01:42.543Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-06T09:01:42.543Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-06T09:01:42.543Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-06T09:01:44.823Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:01:57.603Z [ERROR] "AxiosError: Error\n    at NO (/$bunfs/root/claude:27:1143)\n    at <anonymous> (/$bunfs/root/claude:32:10054)\n    at emit (node:events:92:22)\n    at endReadableNT (internal:streams/readable:862:50)\n    at processTicksAndRejections (native:7:39)\n    at request (/$bunfs/root/claude:34:2147)\n    at processTicksAndRejections (native:7:39)"
+2026-02-06T09:03:35.187Z [DEBUG] executePreToolHooks called for tool: Write
+2026-02-06T09:03:35.187Z [DEBUG] Getting matching hook commands for PreToolUse with query: Write
+2026-02-06T09:03:35.187Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:03:35.187Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2026-02-06T09:03:36.193Z [DEBUG] rg error (signal=undefined, code=ABORT_ERR, stderr: ), 5 results
+2026-02-06T09:03:36.193Z [ERROR] "AbortError: AbortError: The operation was aborted.\n    at unknown\n    at abortChildProcess (node:child_process:937:42)\n    at onAbortListener2 (node:child_process:35:24)\n    at abort (unknown)\n    at <anonymous> (/$bunfs/root/claude:4247:2197)"
+2026-02-06T09:03:36.195Z [DEBUG] Writing to temp file: /home/user/app/design_brief.md.tmp.535.1770368616195
+2026-02-06T09:03:36.196Z [DEBUG] Temp file written successfully, size: 17559 bytes
+2026-02-06T09:03:36.196Z [DEBUG] Renaming /home/user/app/design_brief.md.tmp.535.1770368616195 to /home/user/app/design_brief.md
+2026-02-06T09:03:36.196Z [DEBUG] File /home/user/app/design_brief.md written atomically
+2026-02-06T09:03:36.200Z [DEBUG] Getting matching hook commands for PostToolUse with query: Write
+2026-02-06T09:03:36.200Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:03:36.200Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2026-02-06T09:03:36.221Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-06T09:03:36.222Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-06T09:03:36.222Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-06T09:03:36.222Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-06T09:03:38.437Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:03:39.999Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-02-06T09:03:39.999Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-02-06T09:03:39.999Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:03:39.999Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-02-06T09:03:40.001Z [DEBUG] Writing to temp file: /home/user/app/.claude/todos/c813c50b-86d4-4b27-ae6b-84036e97cc65-agent-c813c50b-86d4-4b27-ae6b-84036e97cc65.json.tmp.535.1770368620001
+2026-02-06T09:03:40.001Z [DEBUG] Preserving file permissions: 100600
+2026-02-06T09:03:40.003Z [DEBUG] Temp file written successfully, size: 573 bytes
+2026-02-06T09:03:40.003Z [DEBUG] Applied original permissions to temp file
+2026-02-06T09:03:40.003Z [DEBUG] Renaming /home/user/app/.claude/todos/c813c50b-86d4-4b27-ae6b-84036e97cc65-agent-c813c50b-86d4-4b27-ae6b-84036e97cc65.json.tmp.535.1770368620001 to /home/user/app/.claude/todos/c813c50b-86d4-4b27-ae6b-84036e97cc65-agent-c813c50b-86d4-4b27-ae6b-84036e97cc65.json
+2026-02-06T09:03:40.003Z [DEBUG] File /home/user/app/.claude/todos/c813c50b-86d4-4b27-ae6b-84036e97cc65-agent-c813c50b-86d4-4b27-ae6b-84036e97cc65.json written atomically
+2026-02-06T09:03:40.005Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-02-06T09:03:40.005Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:03:40.005Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-02-06T09:03:40.015Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-06T09:03:40.015Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-06T09:03:40.015Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-06T09:03:40.015Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-06T09:03:41.757Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:03:43.191Z [DEBUG] executePreToolHooks called for tool: Skill
+2026-02-06T09:03:43.192Z [DEBUG] Getting matching hook commands for PreToolUse with query: Skill
+2026-02-06T09:03:43.192Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:03:43.192Z [DEBUG] Matched 0 unique hooks for query "Skill" (0 before deduplication)
+2026-02-06T09:03:43.192Z [DEBUG] "Permission suggestions for Skill: [\n  {\n    \"type\": \"addRules\",\n    \"rules\": [\n      {\n        \"toolName\": \"Skill\",\n        \"ruleContent\": \"frontend-impl\"\n      }\n    ],\n    \"behavior\": \"allow\",\n    \"destination\": \"localSettings\"\n  }\n]"
+2026-02-06T09:03:43.208Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-06T09:03:43.208Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-06T09:03:43.208Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-06T09:03:43.208Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-06T09:03:44.895Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:03:50.455Z [ERROR] "AxiosError: Error\n    at NO (/$bunfs/root/claude:27:1143)\n    at <anonymous> (/$bunfs/root/claude:32:10054)\n    at emit (node:events:92:22)\n    at endReadableNT (internal:streams/readable:862:50)\n    at processTicksAndRejections (native:7:39)\n    at request (/$bunfs/root/claude:34:2147)\n    at processTicksAndRejections (native:7:39)"
+2026-02-06T09:03:59.032Z [DEBUG] executePreToolHooks called for tool: Write
+2026-02-06T09:03:59.032Z [DEBUG] Getting matching hook commands for PreToolUse with query: Write
+2026-02-06T09:03:59.032Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:03:59.032Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2026-02-06T09:03:59.035Z [DEBUG] Writing to temp file: /home/user/app/src/index.css.tmp.535.1770368639035
+2026-02-06T09:03:59.035Z [DEBUG] Preserving file permissions: 100644
+2026-02-06T09:03:59.037Z [DEBUG] Temp file written successfully, size: 2913 bytes
+2026-02-06T09:03:59.037Z [DEBUG] Applied original permissions to temp file
+2026-02-06T09:03:59.037Z [DEBUG] Renaming /home/user/app/src/index.css.tmp.535.1770368639035 to /home/user/app/src/index.css
+2026-02-06T09:03:59.037Z [DEBUG] File /home/user/app/src/index.css written atomically
+2026-02-06T09:03:59.045Z [DEBUG] Getting matching hook commands for PostToolUse with query: Write
+2026-02-06T09:03:59.045Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:03:59.045Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2026-02-06T09:03:59.064Z [DEBUG] executePreToolHooks called for tool: Write
+2026-02-06T09:03:59.064Z [DEBUG] Getting matching hook commands for PreToolUse with query: Write
+2026-02-06T09:03:59.064Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:03:59.064Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2026-02-06T09:03:59.066Z [DEBUG] Writing to temp file: /home/user/app/index.html.tmp.535.1770368639066
+2026-02-06T09:03:59.066Z [DEBUG] Preserving file permissions: 100644
+2026-02-06T09:03:59.067Z [DEBUG] Temp file written successfully, size: 511 bytes
+2026-02-06T09:03:59.067Z [DEBUG] Applied original permissions to temp file
+2026-02-06T09:03:59.067Z [DEBUG] Renaming /home/user/app/index.html.tmp.535.1770368639066 to /home/user/app/index.html
+2026-02-06T09:03:59.067Z [DEBUG] File /home/user/app/index.html written atomically
+2026-02-06T09:03:59.070Z [DEBUG] Getting matching hook commands for PostToolUse with query: Write
+2026-02-06T09:03:59.070Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:03:59.070Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2026-02-06T09:03:59.083Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-06T09:03:59.083Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-06T09:03:59.083Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-06T09:03:59.083Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-06T09:04:00.938Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:04:02.038Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-02-06T09:04:02.038Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-02-06T09:04:02.038Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:04:02.038Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-06T09:04:02.063Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-02-06T09:04:02.063Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:04:02.063Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-06T09:04:02.083Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-06T09:04:02.083Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-06T09:04:02.083Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-06T09:04:02.083Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-06T09:04:02.513Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:04:04.155Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:04:14.103Z [ERROR] "AxiosError: Error\n    at NO (/$bunfs/root/claude:27:1143)\n    at <anonymous> (/$bunfs/root/claude:32:10054)\n    at emit (node:events:92:22)\n    at endReadableNT (internal:streams/readable:862:50)\n    at processTicksAndRejections (native:7:39)\n    at request (/$bunfs/root/claude:34:2147)\n    at processTicksAndRejections (native:7:39)"
+2026-02-06T09:05:15.557Z [DEBUG] BigQuery metrics exported successfully
+2026-02-06T09:05:15.557Z [DEBUG] "BigQuery API Response: {\n  \"accepted_count\": 17,\n  \"rejected_count\": 0\n}"
+2026-02-06T09:05:56.103Z [DEBUG] executePreToolHooks called for tool: Write
+2026-02-06T09:05:56.103Z [DEBUG] Getting matching hook commands for PreToolUse with query: Write
+2026-02-06T09:05:56.103Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:05:56.103Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2026-02-06T09:05:56.107Z [DEBUG] Writing to temp file: /home/user/app/src/pages/Dashboard.tsx.tmp.535.1770368756107
+2026-02-06T09:05:56.108Z [DEBUG] Temp file written successfully, size: 36123 bytes
+2026-02-06T09:05:56.108Z [DEBUG] Renaming /home/user/app/src/pages/Dashboard.tsx.tmp.535.1770368756107 to /home/user/app/src/pages/Dashboard.tsx
+2026-02-06T09:05:56.108Z [DEBUG] File /home/user/app/src/pages/Dashboard.tsx written atomically
+2026-02-06T09:05:56.112Z [DEBUG] Getting matching hook commands for PostToolUse with query: Write
+2026-02-06T09:05:56.112Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:05:56.112Z [DEBUG] Matched 0 unique hooks for query "Write" (0 before deduplication)
+2026-02-06T09:05:56.134Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-06T09:05:56.134Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-06T09:05:56.134Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-06T09:05:56.134Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-06T09:05:58.095Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:06:01.118Z [DEBUG] executePreToolHooks called for tool: TodoWrite
+2026-02-06T09:06:01.118Z [DEBUG] Getting matching hook commands for PreToolUse with query: TodoWrite
+2026-02-06T09:06:01.118Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:06:01.119Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-02-06T09:06:01.120Z [DEBUG] Writing to temp file: /home/user/app/.claude/todos/c813c50b-86d4-4b27-ae6b-84036e97cc65-agent-c813c50b-86d4-4b27-ae6b-84036e97cc65.json.tmp.535.1770368761120
+2026-02-06T09:06:01.120Z [DEBUG] Preserving file permissions: 100600
+2026-02-06T09:06:01.122Z [DEBUG] Temp file written successfully, size: 575 bytes
+2026-02-06T09:06:01.122Z [DEBUG] Applied original permissions to temp file
+2026-02-06T09:06:01.122Z [DEBUG] Renaming /home/user/app/.claude/todos/c813c50b-86d4-4b27-ae6b-84036e97cc65-agent-c813c50b-86d4-4b27-ae6b-84036e97cc65.json.tmp.535.1770368761120 to /home/user/app/.claude/todos/c813c50b-86d4-4b27-ae6b-84036e97cc65-agent-c813c50b-86d4-4b27-ae6b-84036e97cc65.json
+2026-02-06T09:06:01.122Z [DEBUG] File /home/user/app/.claude/todos/c813c50b-86d4-4b27-ae6b-84036e97cc65-agent-c813c50b-86d4-4b27-ae6b-84036e97cc65.json written atomically
+2026-02-06T09:06:01.124Z [DEBUG] Getting matching hook commands for PostToolUse with query: TodoWrite
+2026-02-06T09:06:01.124Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:06:01.124Z [DEBUG] Matched 0 unique hooks for query "TodoWrite" (0 before deduplication)
+2026-02-06T09:06:01.131Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-06T09:06:01.131Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-06T09:06:01.132Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-06T09:06:01.132Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-06T09:06:03.226Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:06:04.026Z [DEBUG] executePreToolHooks called for tool: Bash
+2026-02-06T09:06:04.026Z [DEBUG] Getting matching hook commands for PreToolUse with query: Bash
+2026-02-06T09:06:04.026Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:06:04.026Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-06T09:06:04.484Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:06:04.500Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:06:11.372Z [ERROR] "AxiosError: Error\n    at NO (/$bunfs/root/claude:27:1143)\n    at <anonymous> (/$bunfs/root/claude:32:10054)\n    at emit (node:events:92:22)\n    at endReadableNT (internal:streams/readable:862:50)\n    at processTicksAndRejections (native:7:39)\n    at request (/$bunfs/root/claude:34:2147)\n    at processTicksAndRejections (native:7:39)"
+2026-02-06T09:06:28.326Z [DEBUG] Getting matching hook commands for PostToolUse with query: Bash
+2026-02-06T09:06:28.326Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:06:28.326Z [DEBUG] Matched 0 unique hooks for query "Bash" (0 before deduplication)
+2026-02-06T09:06:28.341Z [DEBUG] LSP Diagnostics: getLSPDiagnosticAttachments called
+2026-02-06T09:06:28.341Z [DEBUG] LSP Diagnostics: Checking registry - 0 pending
+2026-02-06T09:06:28.341Z [DEBUG] Hooks: Found 0 total hooks in registry
+2026-02-06T09:06:28.341Z [DEBUG] Hooks: checkForNewResponses returning 0 responses
+2026-02-06T09:06:28.902Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:06:30.391Z [DEBUG] Stream started - received first chunk
+2026-02-06T09:06:31.611Z [DEBUG] executePreToolHooks called for tool: mcp__deploy_tools__deploy_to_github
+2026-02-06T09:06:31.611Z [DEBUG] Getting matching hook commands for PreToolUse with query: mcp__deploy_tools__deploy_to_github
+2026-02-06T09:06:31.611Z [DEBUG] Found 0 hook matchers in settings
+2026-02-06T09:06:31.611Z [DEBUG] Matched 0 unique hooks for query "mcp__deploy_tools__deploy_to_github" (0 before deduplication)
+2026-02-06T09:06:31.613Z [DEBUG] MCP server "deploy_tools": Calling MCP tool: deploy_to_github
