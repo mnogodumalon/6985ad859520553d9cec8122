@@ -1,6 +1,6 @@
 // AUTOMATICALLY GENERATED SERVICE
 import { APP_IDS } from '@/types/app';
-import type { Benutzerverwaltung, Kalendereintraege, Wochenkalender } from '@/types/app';
+import type { Benutzerverwaltung, Wochenkalender, Kalendereintraege } from '@/types/app';
 
 // Base Configuration
 const API_BASE_URL = 'https://my.living-apps.de/rest';
@@ -52,27 +52,6 @@ export class LivingAppsService {
     return callApi('DELETE', `/apps/${APP_IDS.BENUTZERVERWALTUNG}/records/${id}`);
   }
 
-  // --- KALENDEREINTRAEGE ---
-  static async getKalendereintraege(): Promise<Kalendereintraege[]> {
-    const data = await callApi('GET', `/apps/${APP_IDS.KALENDEREINTRAEGE}/records`);
-    return Object.entries(data).map(([id, rec]: [string, any]) => ({
-      record_id: id, ...rec
-    }));
-  }
-  static async getKalendereintraegeEntry(id: string): Promise<Kalendereintraege | undefined> {
-    const data = await callApi('GET', `/apps/${APP_IDS.KALENDEREINTRAEGE}/records/${id}`);
-    return { record_id: data.id, ...data };
-  }
-  static async createKalendereintraegeEntry(fields: Kalendereintraege['fields']) {
-    return callApi('POST', `/apps/${APP_IDS.KALENDEREINTRAEGE}/records`, { fields });
-  }
-  static async updateKalendereintraegeEntry(id: string, fields: Partial<Kalendereintraege['fields']>) {
-    return callApi('PATCH', `/apps/${APP_IDS.KALENDEREINTRAEGE}/records/${id}`, { fields });
-  }
-  static async deleteKalendereintraegeEntry(id: string) {
-    return callApi('DELETE', `/apps/${APP_IDS.KALENDEREINTRAEGE}/records/${id}`);
-  }
-
   // --- WOCHENKALENDER ---
   static async getWochenkalender(): Promise<Wochenkalender[]> {
     const data = await callApi('GET', `/apps/${APP_IDS.WOCHENKALENDER}/records`);
@@ -92,6 +71,27 @@ export class LivingAppsService {
   }
   static async deleteWochenkalenderEntry(id: string) {
     return callApi('DELETE', `/apps/${APP_IDS.WOCHENKALENDER}/records/${id}`);
+  }
+
+  // --- KALENDEREINTRAEGE ---
+  static async getKalendereintraege(): Promise<Kalendereintraege[]> {
+    const data = await callApi('GET', `/apps/${APP_IDS.KALENDEREINTRAEGE}/records`);
+    return Object.entries(data).map(([id, rec]: [string, any]) => ({
+      record_id: id, ...rec
+    }));
+  }
+  static async getKalendereintraegeEntry(id: string): Promise<Kalendereintraege | undefined> {
+    const data = await callApi('GET', `/apps/${APP_IDS.KALENDEREINTRAEGE}/records/${id}`);
+    return { record_id: data.id, ...data };
+  }
+  static async createKalendereintraegeEntry(fields: Kalendereintraege['fields']) {
+    return callApi('POST', `/apps/${APP_IDS.KALENDEREINTRAEGE}/records`, { fields });
+  }
+  static async updateKalendereintraegeEntry(id: string, fields: Partial<Kalendereintraege['fields']>) {
+    return callApi('PATCH', `/apps/${APP_IDS.KALENDEREINTRAEGE}/records/${id}`, { fields });
+  }
+  static async deleteKalendereintraegeEntry(id: string) {
+    return callApi('DELETE', `/apps/${APP_IDS.KALENDEREINTRAEGE}/records/${id}`);
   }
 
 }
