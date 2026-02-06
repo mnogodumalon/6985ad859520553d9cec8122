@@ -1,6 +1,6 @@
 // AUTOMATICALLY GENERATED SERVICE
 import { APP_IDS } from '@/types/app';
-import type { Wochenkalender, Benutzerverwaltung, Kalendereintraege } from '@/types/app';
+import type { Kalendereintraege, Benutzerverwaltung, Wochenkalender } from '@/types/app';
 
 // Base Configuration
 const API_BASE_URL = 'https://my.living-apps.de/rest';
@@ -31,25 +31,25 @@ async function callApi(method: string, endpoint: string, data?: any) {
 }
 
 export class LivingAppsService {
-  // --- WOCHENKALENDER ---
-  static async getWochenkalender(): Promise<Wochenkalender[]> {
-    const data = await callApi('GET', `/apps/${APP_IDS.WOCHENKALENDER}/records`);
+  // --- KALENDEREINTRAEGE ---
+  static async getKalendereintraege(): Promise<Kalendereintraege[]> {
+    const data = await callApi('GET', `/apps/${APP_IDS.KALENDEREINTRAEGE}/records`);
     return Object.entries(data).map(([id, rec]: [string, any]) => ({
       record_id: id, ...rec
     }));
   }
-  static async getWochenkalenderEntry(id: string): Promise<Wochenkalender | undefined> {
-    const data = await callApi('GET', `/apps/${APP_IDS.WOCHENKALENDER}/records/${id}`);
+  static async getKalendereintraegeEntry(id: string): Promise<Kalendereintraege | undefined> {
+    const data = await callApi('GET', `/apps/${APP_IDS.KALENDEREINTRAEGE}/records/${id}`);
     return { record_id: data.id, ...data };
   }
-  static async createWochenkalenderEntry(fields: Wochenkalender['fields']) {
-    return callApi('POST', `/apps/${APP_IDS.WOCHENKALENDER}/records`, { fields });
+  static async createKalendereintraegeEntry(fields: Kalendereintraege['fields']) {
+    return callApi('POST', `/apps/${APP_IDS.KALENDEREINTRAEGE}/records`, { fields });
   }
-  static async updateWochenkalenderEntry(id: string, fields: Partial<Wochenkalender['fields']>) {
-    return callApi('PATCH', `/apps/${APP_IDS.WOCHENKALENDER}/records/${id}`, { fields });
+  static async updateKalendereintraegeEntry(id: string, fields: Partial<Kalendereintraege['fields']>) {
+    return callApi('PATCH', `/apps/${APP_IDS.KALENDEREINTRAEGE}/records/${id}`, { fields });
   }
-  static async deleteWochenkalenderEntry(id: string) {
-    return callApi('DELETE', `/apps/${APP_IDS.WOCHENKALENDER}/records/${id}`);
+  static async deleteKalendereintraegeEntry(id: string) {
+    return callApi('DELETE', `/apps/${APP_IDS.KALENDEREINTRAEGE}/records/${id}`);
   }
 
   // --- BENUTZERVERWALTUNG ---
@@ -73,25 +73,25 @@ export class LivingAppsService {
     return callApi('DELETE', `/apps/${APP_IDS.BENUTZERVERWALTUNG}/records/${id}`);
   }
 
-  // --- KALENDEREINTRAEGE ---
-  static async getKalendereintraege(): Promise<Kalendereintraege[]> {
-    const data = await callApi('GET', `/apps/${APP_IDS.KALENDEREINTRAEGE}/records`);
+  // --- WOCHENKALENDER ---
+  static async getWochenkalender(): Promise<Wochenkalender[]> {
+    const data = await callApi('GET', `/apps/${APP_IDS.WOCHENKALENDER}/records`);
     return Object.entries(data).map(([id, rec]: [string, any]) => ({
       record_id: id, ...rec
     }));
   }
-  static async getKalendereintraegeEntry(id: string): Promise<Kalendereintraege | undefined> {
-    const data = await callApi('GET', `/apps/${APP_IDS.KALENDEREINTRAEGE}/records/${id}`);
+  static async getWochenkalenderEntry(id: string): Promise<Wochenkalender | undefined> {
+    const data = await callApi('GET', `/apps/${APP_IDS.WOCHENKALENDER}/records/${id}`);
     return { record_id: data.id, ...data };
   }
-  static async createKalendereintraegeEntry(fields: Kalendereintraege['fields']) {
-    return callApi('POST', `/apps/${APP_IDS.KALENDEREINTRAEGE}/records`, { fields });
+  static async createWochenkalenderEntry(fields: Wochenkalender['fields']) {
+    return callApi('POST', `/apps/${APP_IDS.WOCHENKALENDER}/records`, { fields });
   }
-  static async updateKalendereintraegeEntry(id: string, fields: Partial<Kalendereintraege['fields']>) {
-    return callApi('PATCH', `/apps/${APP_IDS.KALENDEREINTRAEGE}/records/${id}`, { fields });
+  static async updateWochenkalenderEntry(id: string, fields: Partial<Wochenkalender['fields']>) {
+    return callApi('PATCH', `/apps/${APP_IDS.WOCHENKALENDER}/records/${id}`, { fields });
   }
-  static async deleteKalendereintraegeEntry(id: string) {
-    return callApi('DELETE', `/apps/${APP_IDS.KALENDEREINTRAEGE}/records/${id}`);
+  static async deleteWochenkalenderEntry(id: string) {
+    return callApi('DELETE', `/apps/${APP_IDS.WOCHENKALENDER}/records/${id}`);
   }
 
 }

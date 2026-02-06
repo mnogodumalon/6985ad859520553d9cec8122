@@ -42,38 +42,38 @@
 }
 
 :root {
-  --radius: 0.5rem;
-  --background: hsl(40 25% 97%);
-  --foreground: hsl(220 20% 16%);
+  --radius: 0.75rem;
+  --background: hsl(40 20% 98%);
+  --foreground: hsl(200 15% 15%);
   --card: hsl(0 0% 100%);
-  --card-foreground: hsl(220 20% 16%);
+  --card-foreground: hsl(200 15% 15%);
   --popover: hsl(0 0% 100%);
-  --popover-foreground: hsl(220 20% 16%);
-  --primary: hsl(215 55% 42%);
+  --popover-foreground: hsl(200 15% 15%);
+  --primary: hsl(153 40% 40%);
   --primary-foreground: hsl(0 0% 100%);
-  --secondary: hsl(220 15% 95%);
-  --secondary-foreground: hsl(220 20% 20%);
-  --muted: hsl(220 15% 95%);
-  --muted-foreground: hsl(220 10% 50%);
-  --accent: hsl(215 40% 95%);
-  --accent-foreground: hsl(215 55% 30%);
-  --destructive: hsl(0 65% 52%);
-  --border: hsl(220 15% 90%);
-  --input: hsl(220 15% 90%);
-  --ring: hsl(215 55% 42%);
-  --chart-1: hsl(215 55% 52%);
-  --chart-2: hsl(35 75% 55%);
-  --chart-3: hsl(152 40% 48%);
-  --chart-4: hsl(215 55% 42%);
-  --chart-5: hsl(280 45% 55%);
-  --sidebar: hsl(40 25% 97%);
-  --sidebar-foreground: hsl(220 20% 16%);
-  --sidebar-primary: hsl(215 55% 42%);
+  --secondary: hsl(40 15% 96%);
+  --secondary-foreground: hsl(200 15% 15%);
+  --muted: hsl(40 15% 96%);
+  --muted-foreground: hsl(200 10% 45%);
+  --accent: hsl(153 30% 95%);
+  --accent-foreground: hsl(200 15% 15%);
+  --destructive: hsl(0 70% 55%);
+  --border: hsl(40 15% 90%);
+  --input: hsl(40 15% 90%);
+  --ring: hsl(153 40% 40%);
+  --chart-1: hsl(153 35% 45%);
+  --chart-2: hsl(35 70% 55%);
+  --chart-3: hsl(210 45% 55%);
+  --chart-4: hsl(153 40% 40%);
+  --chart-5: hsl(35 60% 50%);
+  --sidebar: hsl(40 15% 96%);
+  --sidebar-foreground: hsl(200 15% 15%);
+  --sidebar-primary: hsl(153 40% 40%);
   --sidebar-primary-foreground: hsl(0 0% 100%);
-  --sidebar-accent: hsl(215 40% 95%);
-  --sidebar-accent-foreground: hsl(215 55% 30%);
-  --sidebar-border: hsl(220 15% 90%);
-  --sidebar-ring: hsl(215 55% 42%);
+  --sidebar-accent: hsl(153 30% 95%);
+  --sidebar-accent-foreground: hsl(200 15% 15%);
+  --sidebar-border: hsl(40 15% 90%);
+  --sidebar-ring: hsl(153 40% 40%);
 }
 
 .dark {
@@ -116,6 +116,5 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'Plus Jakarta Sans', sans-serif;
   }
 }
